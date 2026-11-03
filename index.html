@@ -1,0 +1,1449 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Jetset Prints 53: small-run stickers, labels, business cards, photo prints and kids’ party favours, printed in North York, Toronto.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0A0A0A">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Jetset Prints 53</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+/* Layout: Swiss / minimal. White paper, black type, one gold accent, a 12-column grid, hairline rules, square corners, no shadows or gradients. */
+:root{
+  --bg:#FFFFFF; --surface:#FFFFFF; --art:#F2F2F2; --ink:#0A0A0A; --muted:#525252; --line:#E0E0E0; --line-strong:#767676; --hover:#F2F2F2;
+  --gold:#C9A24B; --gold-hover:#B8913D; --gold-ink:#7A5C14; --focus:#0A0A0A; --on-gold:#0A0A0A;
+  --band:#0A0A0A; --band-2:#0A0A0A; --band-ink:#FFFFFF; --band-muted:#BDBDBD; --band-line:#3A3A3A;
+  --notice:#F5F5F5; --edge:#C8C8C8; --ok:#15803D; --err:#B91C1C;
+  --shadow:none; --radius:0px; --gutter:24px;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  /* fixed product colours used inside illustrations (the same in both themes) */
+  --jet:#0B0C10; --white:#FFFFFF; --ivory:#F5F1E8; --pgold:#C9A24B; --pgold2:#A8873A; --pgold3:#7A5C14; --pcon:#9EA3AE; --pline:#CFC8B8; --pmuted:#4B4F58; --fridge:#E4E6EA;
+  --f-body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  --f-display:var(--f-body);
+  --f-brand:'Archivo','Arial Black',system-ui,sans-serif;
+  --f-mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --maxw:1200px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A0A0A; --surface:#111111; --art:#1A1A1A; --ink:#F5F5F5; --muted:#A3A3A3; --line:#2A2A2A; --line-strong:#8A8A8A; --hover:#1C1C1C;
+    --gold:#C9A24B; --gold-hover:#D8B866; --gold-ink:#D8B866; --focus:#F5F5F5; --on-gold:#0A0A0A;
+    --band:#171717; --band-2:#171717; --band-ink:#F5F5F5; --band-muted:#A3A3A3; --band-line:#333333;
+    --notice:#171717; --edge:#3A3A3A; --ok:#4ADE80; --err:#F87171;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A0A0A; --surface:#111111; --art:#1A1A1A; --ink:#F5F5F5; --muted:#A3A3A3; --line:#2A2A2A; --line-strong:#8A8A8A; --hover:#1C1C1C;
+  --gold:#C9A24B; --gold-hover:#D8B866; --gold-ink:#D8B866; --focus:#F5F5F5; --on-gold:#0A0A0A;
+  --band:#171717; --band-2:#171717; --band-ink:#F5F5F5; --band-muted:#A3A3A3; --band-line:#333333;
+  --notice:#171717; --edge:#3A3A3A; --ok:#4ADE80; --err:#F87171;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 96px);-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+a{color:inherit;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:0}
+.b-receipt,.info.dark{--focus:var(--band-ink)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+button,a,[role="button"],.seg label,.check{touch-action:manipulation}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:760px){.wrap{padding-left:max(32px,env(safe-area-inset-left,0px));padding-right:max(32px,env(safe-area-inset-right,0px))}}
+
+.eyebrow{font-family:var(--f-body);font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;margin:0;text-wrap:balance;letter-spacing:-.02em}
+h2{font-size:clamp(1.75rem,3.6vw,2.75rem);line-height:1.05;letter-spacing:-.03em}
+h3{font-size:1.125rem;line-height:1.25;font-weight:600;letter-spacing:-.01em}
+p{margin:0}
+.lede{color:var(--muted);max-width:62ch;font-size:1.0625rem;text-wrap:pretty}
+
+/* header */
+.site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--ink)}
+.head-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);min-height:44px}
+.brand svg{width:34px;height:34px;flex:none}
+.wm{display:flex;flex-direction:column;gap:3px;line-height:1}
+.wm-top{font-family:var(--f-brand);font-weight:800;font-stretch:125%;font-size:1.15rem;letter-spacing:.02em}
+.wm-bot{display:flex;align-items:center;gap:6px;font-family:var(--f-mono);font-weight:700;font-size:.62rem;letter-spacing:.32em}
+.wm-bot i{display:block;width:22px;height:2px;background:var(--gold)}
+.wm-bot b{background:var(--gold);color:var(--on-gold);border-radius:0;padding:1px 5px;letter-spacing:0}
+.nav{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.nav a{font-weight:500;font-size:.9375rem;text-decoration:none;padding:10px 12px;min-height:44px;display:inline-flex;align-items:center;text-decoration-thickness:1px;text-underline-offset:6px}
+.nav .nav-cta{background:var(--ink);color:var(--bg);margin-left:8px;font-weight:600;transition:background-color .2s ease,color .2s ease}
+@media (hover:hover) and (pointer:fine){.nav a:hover{text-decoration-line:underline}.nav .nav-cta:hover{background:var(--gold);color:var(--on-gold);text-decoration-line:none}}
+@media (max-width:560px){.nav .nav-cta{display:none}.nav a{padding:8px;font-size:.875rem}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--f-body);font-weight:600;font-size:.9375rem;border-radius:0;padding:12px 20px;min-height:44px;text-decoration:none;cursor:pointer;border:1px solid transparent;line-height:1.1;transition:background-color .2s ease,color .2s ease,border-color .2s ease,transform .16s var(--ease-out)}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:var(--gold);color:var(--on-gold);border-color:var(--gold-ink)}
+.btn-line{border-color:currentColor;background:transparent;color:inherit}
+.btn-ghost{border-color:var(--line-strong);background:transparent;color:var(--ink);width:100%}
+@media (hover:hover) and (pointer:fine){
+  .btn-gold:hover{background:var(--gold-hover)}
+  .btn-line:hover,.btn-ghost:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+}
+@media (prefers-reduced-motion: reduce){.btn{transition:none}.btn:active{transform:none}}
+
+/* hero: 12-column grid, type does the work */
+.band{background:var(--bg);color:var(--ink);border-bottom:1px solid var(--line)}
+.hero{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gutter);row-gap:48px;align-items:end;padding-block:clamp(48px,8vw,104px)}
+.hero > *{grid-column:1 / -1;min-width:0}
+@media (min-width:960px){.hero > :first-child{grid-column:1 / span 7}.hero > .board{grid-column:8 / -1}}
+.hero .eyebrow{color:var(--muted)}
+.hero h1{font-size:clamp(2.75rem,7vw,5.5rem);line-height:.95;letter-spacing:-.045em;margin-top:20px}
+.hero h1 span{display:block;color:var(--gold-ink)}
+.hero .lede{color:var(--muted);margin-top:24px;font-size:1.125rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.offer{display:inline-flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:24px;font-size:.9375rem;color:var(--muted)}
+.code{font-family:var(--f-mono);font-weight:700;color:var(--ink);border:1px solid var(--ink);border-radius:0;padding:3px 8px;letter-spacing:.06em}
+
+.board{background:transparent;border-top:2px solid var(--ink);padding:0;min-width:0;font-family:var(--f-body)}
+.board-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-weight:600;font-size:.75rem;letter-spacing:.12em;color:var(--ink);padding:12px 0;border-bottom:1px solid var(--ink)}
+.board-row{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(108px,auto);gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);font-size:.9375rem}
+.board-row.cols{font-size:.75rem;font-weight:600;letter-spacing:.12em;color:var(--muted);padding:12px 0 8px;border-bottom:none}
+.board-row .prod{font-weight:600;overflow-wrap:anywhere}
+.board-row .eta{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.status{justify-self:end;font-weight:600;font-size:.75rem;letter-spacing:.08em;padding:4px 8px;border:1px solid transparent;border-radius:0;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+.st-board{background:var(--gold);border-color:var(--gold-ink);color:var(--on-gold)}
+.st-board::before{content:"";width:6px;height:6px;background:var(--on-gold)}
+.st-time{color:var(--ink);border-color:var(--line-strong)}
+.st-ahead{color:var(--gold-ink);border-color:var(--gold-ink)}
+.board-note{font-size:.75rem;color:var(--muted);margin-top:12px}
+@media (max-width:420px){.board-row{grid-template-columns:minmax(0,1fr) auto}.board-row .eta{grid-column:1;grid-row:2;font-size:.8125rem}.board-row .status{grid-column:2;grid-row:1 / span 2}.board-row.cols span:nth-child(2){display:none}}
+
+/* notice strip */
+.notice{background:var(--notice);border-bottom:1px solid var(--line)}
+.notice p{padding-block:14px;font-size:.9375rem;display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.notice strong{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+
+/* sections: label in the left 3 columns, heading and copy in the right 9 */
+section{scroll-margin-top:96px}
+.section{padding-block:clamp(56px,9vw,112px)}
+.sec-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gutter);row-gap:12px;margin-bottom:40px;padding-top:16px;border-top:1px solid var(--ink)}
+.sec-head > *{grid-column:1 / -1;min-width:0}
+@media (min-width:900px){.sec-head > .eyebrow{grid-column:1 / span 3;grid-row:1 / span 3;padding-top:.55em}.sec-head > :not(.eyebrow){grid-column:4 / -1}}
+
+/* filters */
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filter{font-family:var(--f-body);font-weight:500;font-size:.875rem;border:1px solid var(--line-strong);background:var(--bg);color:var(--ink);border-radius:0;padding:10px 16px;min-height:44px;cursor:pointer;transition:background-color .2s ease,color .2s ease}
+.filter[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+@media (hover:hover) and (pointer:fine){.filter:not([aria-pressed="true"]):hover{background:var(--hover)}}
+.count{font-size:.8125rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.price-note{font-size:.875rem;color:var(--muted)}
+
+/* product grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:var(--gutter)}
+.card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:0;overflow:hidden;min-width:0;scroll-margin-top:96px;transition:border-color .2s ease}
+.art{position:relative;overflow:hidden;aspect-ratio:16/10;background:var(--art);max-width:100%;border-bottom:1px solid var(--line)}
+.art svg{display:block;width:100%;height:100%;transition:transform .25s var(--ease-out)}
+.card-body{display:flex;flex-direction:column;gap:16px;padding:24px;flex:1;min-width:0}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.chip{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.from{font-weight:600;color:var(--gold-ink);font-size:.9375rem;white-space:nowrap;font-variant-numeric:tabular-nums}
+.desc{color:var(--muted);font-size:.9375rem}
+.tiers{width:100%;border-collapse:collapse;font-size:.9375rem}
+.tiers th{text-align:left;font-weight:400;padding:8px 0;border-top:1px solid var(--line)}
+.tiers td{text-align:right;font-weight:600;padding:8px 0 8px 12px;border-top:1px solid var(--line);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tiers tr:last-child th,.tiers tr:last-child td{border-bottom:1px solid var(--line)}
+.opts{display:grid;gap:8px;margin:0}
+.opts div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px}
+.opts dt{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:2px}
+.opts dd{margin:0;font-size:.875rem}
+.card .eta-line{font-size:.8125rem;color:var(--ink);display:flex;gap:8px;align-items:center}
+.card .eta-line span{color:var(--muted);font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.75rem}
+.card .btn{margin-top:auto}
+.card .btn + .btn{margin-top:0}
+.card:focus-within{border-color:var(--ink)}
+@media (hover:hover) and (pointer:fine){.card:hover{border-color:var(--ink)}.card:hover .art svg{transform:scale(1.02)}}
+@media (prefers-reduced-motion: reduce){.card,.art svg{transition:none}.card:hover .art svg{transform:none}}
+
+/* svg art classes */
+.f-jet{fill:var(--jet)}.f-white{fill:var(--white)}.f-gold{fill:var(--pgold)}.f-gold2{fill:var(--pgold2)}.f-gold3{fill:var(--pgold3)}.f-con{fill:var(--pcon)}.f-line{fill:var(--pline)}.f-pmuted{fill:var(--pmuted)}.f-fridge{fill:var(--fridge)}.f-art{fill:var(--art)}.f-muted{fill:var(--muted)}.f-ivory{fill:var(--ivory)}
+.s-edge{stroke:var(--edge);stroke-width:1}.s-con{stroke:var(--pcon);fill:none}.s-jet{stroke:var(--jet);fill:none}.s-line{stroke:var(--pline);fill:none}.s-muted{stroke:var(--muted);fill:none}
+.t-disp{font-family:var(--f-brand);font-weight:800;font-stretch:125%}.t-mono{font-family:var(--f-mono);font-weight:700}.t-body{font-family:var(--f-body)}
+
+/* how it works: three numbered columns */
+.ticket{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink);border-bottom:1px solid var(--line);margin-top:48px}
+.stub{padding:24px 24px 28px 0;display:flex;flex-direction:column;gap:8px;min-width:0}
+.stub + .stub{border-left:1px solid var(--line);padding-left:24px}
+.stub .step{font-size:.75rem;font-weight:600;letter-spacing:.12em;color:var(--muted)}
+.stub p{color:var(--muted);font-size:.9375rem}
+@media (max-width:760px){.ticket{grid-template-columns:minmax(0,1fr)}.stub,.stub + .stub{padding:20px 0}.stub + .stub{border-left:none;border-top:1px solid var(--line)}}
+.pay-line{margin-top:16px;font-size:.9375rem;color:var(--muted)}
+
+/* shipping */
+.ship-notice{border-top:2px solid var(--ink);background:var(--notice);border-radius:0;padding:16px 20px;font-size:.9375rem;max-width:78ch}
+.ship-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gutter);margin-top:32px}
+@media (max-width:900px){.ship-grid{grid-template-columns:minmax(0,1fr)}}
+.ship{background:var(--surface);border:1px solid var(--line);border-radius:0;padding:24px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.ship-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.ship-price{font-weight:600;color:var(--gold-ink);font-size:.9375rem;font-variant-numeric:tabular-nums}
+.ship dl{margin:0;display:grid;gap:10px}
+.ship dl div{display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px}
+.ship dt{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:2px}
+.ship dd{margin:0;font-size:.9375rem}
+.extras{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gutter);margin-top:var(--gutter)}
+@media (max-width:760px){.extras{grid-template-columns:minmax(0,1fr)}}
+.extra{border:1px solid var(--line);border-radius:0;padding:20px 24px;display:flex;flex-direction:column;gap:6px}
+.extra h3{font-size:1rem}
+.extra p{color:var(--muted);font-size:.9375rem}
+.disclaimer{margin-top:20px;font-size:.875rem;color:var(--muted);max-width:78ch}
+.policies{margin-top:48px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--gutter);border-top:1px solid var(--ink);padding-top:24px}
+@media (max-width:900px){.policies{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.policies{grid-template-columns:minmax(0,1fr)}}
+.policy h3{font-size:.9375rem}
+.policy p{font-size:.875rem;color:var(--muted);margin-top:6px}
+
+/* contact: form across 8 columns, details in the last 4 */
+.contact-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gutter);align-items:start}
+.contact-grid > *{grid-column:1 / -1;min-width:0}
+@media (min-width:900px){.contact-grid > :first-child{grid-column:1 / span 8}.contact-grid > .aside{grid-column:9 / -1}}
+.form{background:var(--surface);border:1px solid var(--line);border-radius:0;padding:clamp(20px,3vw,32px);display:grid;gap:20px;min-width:0}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:560px){.row2{grid-template-columns:minmax(0,1fr)}}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-weight:600;font-size:.875rem}
+.field .hint{font-weight:400;color:var(--muted);font-size:.8125rem}
+.field input,.field select,.field textarea{font:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:1px solid var(--line-strong);border-radius:0;padding:11px 12px;min-height:44px;width:100%;min-width:0}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus,.field:focus-within > input,.field:focus-within > select,.field:focus-within > textarea{outline:2px solid var(--focus);outline-offset:2px;border-color:var(--ink)}
+.field .err{color:var(--err);font-size:.8125rem;min-height:0}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--err)}
+.form-foot{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.form-foot p{font-size:.8125rem;color:var(--muted);max-width:44ch}
+
+.result{background:var(--surface);border:1px solid var(--ink);border-radius:0;padding:clamp(20px,3vw,28px);display:grid;gap:16px;margin-top:24px}
+.result .ref{font-family:var(--f-mono);font-weight:700;color:var(--gold-ink);letter-spacing:.06em}
+.result textarea{font-family:var(--f-mono);font-size:.875rem;line-height:1.5;color:var(--ink);background:var(--bg);border:1px solid var(--line-strong);border-radius:0;padding:12px;width:100%;min-height:220px;resize:vertical}
+.result-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.result-actions .btn-line{color:var(--ink)}
+.copy-status{font-size:.875rem;color:var(--ok);font-weight:600}
+
+.aside{display:grid;gap:16px}
+.info{background:var(--surface);border:1px solid var(--line);border-radius:0;padding:20px 24px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.info .k{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.info p{font-size:.9375rem;color:var(--muted)}
+.info .v{font-weight:700;color:var(--ink);font-size:1.0625rem;overflow-wrap:anywhere}
+.info a.v{display:inline-block;align-self:flex-start;padding-block:9px;margin-block:-9px;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:4px}
+.info.dark{background:var(--band);border-color:var(--band-line);color:var(--band-ink)}
+.info.dark p{color:var(--band-muted)}
+.info.dark .k{color:var(--gold)}
+.info.dark .v{color:var(--band-ink)}
+
+/* sample book with page flip */
+.flip-modal{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.flip-backdrop{position:absolute;inset:0;background:rgba(10,10,10,.8)}
+.flip-panel{position:relative;width:min(860px,100%);max-height:100%;overflow:auto;background:var(--surface);color:var(--ink);border:1px solid var(--ink);border-radius:0;padding:clamp(20px,3vw,32px);display:flex;flex-direction:column;gap:16px}
+.flip-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.flip-head h3{font-size:1.375rem;margin-top:4px}
+.flip-x{flex:none;width:44px;height:44px;border-radius:0;border:1px solid var(--line-strong);background:transparent;color:var(--ink);cursor:pointer;display:grid;place-items:center;transition:background-color .2s ease}
+@media (hover:hover) and (pointer:fine){.flip-x:hover{background:var(--hover)}}
+.flip-name{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.flip-name label{font-weight:600;font-size:.875rem}
+.flip-name input{font:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:1px solid var(--line-strong);border-radius:0;padding:10px 12px;min-height:44px;width:min(220px,100%)}
+.flip-name input:focus{outline:2px solid var(--focus);outline-offset:2px}
+.flip-name .hint{font-size:.8125rem;color:var(--muted)}
+.book-stage{display:flex;justify-content:center;padding:10px 0 6px;overflow:hidden}
+.book{--pw:max(140px,min(300px,40vw,calc((100vh - 380px) / 1.55)));--ph:calc(var(--pw) * 1.5455);position:relative;flex:none;width:calc(var(--pw) * 2);height:var(--ph);perspective:2200px;transition:transform .7s cubic-bezier(.3,.7,.3,1)}
+.book.at-start{transform:translateX(calc(var(--pw) * -0.5))}
+.book.at-end{transform:translateX(calc(var(--pw) * 0.5))}
+.leaf{position:absolute;left:50%;top:0;width:var(--pw);height:100%;transform-origin:left center;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.3,.7,.3,1);cursor:pointer}
+.leaf.flipped{transform:rotateY(-180deg)}
+.face{position:absolute;inset:0;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:0;outline:1px solid var(--line-strong);outline-offset:-1px}
+.face.back{transform:rotateY(180deg)}
+.face svg{display:block;width:100%;height:100%}
+.face::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.12),transparent 8%)}
+.face.back::after{background:linear-gradient(270deg,rgba(0,0,0,.12),transparent 8%)}
+.flip-controls{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap}
+.flip-controls .btn[disabled]{opacity:.4;cursor:default}
+.flip-controls .btn-line{color:var(--ink)}
+.flip-status{font-size:.8125rem;color:var(--muted);min-width:170px;text-align:center;font-variant-numeric:tabular-nums}
+.flip-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px}
+.flip-foot p{font-size:.875rem;color:var(--muted);max-width:50ch}
+.flip-foot .btn{width:auto}
+@media (prefers-reduced-motion: reduce){.leaf,.book{transition:none}}
+
+/* holographic foil on the business card art (shows the foil finish on mouse hover or keyboard focus) */
+.foil-layer{opacity:0;mix-blend-mode:color-dodge;transition:opacity .25s ease}
+.art.foil::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .25s ease;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.5),transparent 42%);mix-blend-mode:soft-light}
+.card:focus-within .foil-layer{opacity:.65}
+@media (hover:hover) and (pointer:fine){.card:hover .foil-layer{opacity:.65}.card:hover .art.foil::before{opacity:1}}
+
+/* scroll reveals: content stays visible and settles 16px into place, once */
+.reveal-on .rv{translate:0 16px;transition:translate .5s var(--ease-out) var(--d,0ms)}
+.reveal-on .card.rv{transition:border-color .2s ease,translate .5s var(--ease-out) var(--d,0ms)}
+.reveal-on .rv.in{translate:0 0}
+
+/* live price builder: controls across 7 columns, preview and receipt in 5 */
+.builder{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--gutter);align-items:start}
+.builder > *{grid-column:1 / -1}
+@media (min-width:900px){.builder > .b-controls{grid-column:1 / span 7}.builder > .b-output{grid-column:8 / -1}}
+.b-controls{background:var(--surface);border:1px solid var(--line);border-radius:0;padding:clamp(20px,3vw,28px);display:flex;flex-direction:column;gap:20px;min-width:0}
+.b-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.b-tab{font-family:var(--f-body);font-weight:600;font-size:.875rem;border:1px solid var(--line-strong);background:var(--bg);color:var(--ink);border-radius:0;padding:10px 16px;cursor:pointer;min-height:44px;transition:background-color .2s ease,color .2s ease}
+.b-tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+@media (hover:hover) and (pointer:fine){.b-tab:not([aria-selected="true"]):hover{background:var(--hover)}}
+.b-panel{display:flex;flex-direction:column;gap:20px}
+.b-group{border:0;margin:0;padding:0;min-width:0}
+.b-group legend{font-weight:600;font-size:.875rem;padding:0;margin-bottom:8px}
+.b-field{display:flex;flex-direction:column;gap:8px;min-width:0}
+.b-lab{font-weight:600;font-size:.875rem}
+.b-lab .hint{font-weight:400;color:var(--muted);font-size:.8125rem}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg-stack{flex-direction:column;align-items:stretch}
+.seg input{position:absolute;opacity:0;width:1px;height:1px}
+.seg label{border:1px solid var(--line-strong);background:var(--bg);border-radius:0;padding:10px 14px;font-weight:500;font-size:.875rem;cursor:pointer;min-height:44px;display:inline-flex;align-items:center;transition:background-color .2s ease,color .2s ease}
+.seg input:checked + label{border-color:var(--ink);background:var(--ink);color:var(--bg)}
+.seg input:focus-visible + label{outline:2px solid var(--focus);outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.seg input:not(:checked) + label:hover{background:var(--hover)}}
+.b-input{font:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:1px solid var(--line-strong);border-radius:0;padding:10px 12px;min-height:44px;width:100%;min-width:0}
+.b-input:focus{outline:2px solid var(--focus);outline-offset:2px}
+.b-num{width:110px;font-variant-numeric:tabular-nums}
+.qty-row{display:flex;align-items:center;gap:12px}
+.qty-row input[type="range"]{flex:1;min-width:0;accent-color:var(--ink);height:44px}
+.picks{display:flex;gap:8px;flex-wrap:wrap}
+.pick{font-family:var(--f-body);font-size:.8125rem;font-weight:600;border:1px solid var(--line-strong);background:transparent;color:var(--ink);border-radius:0;padding:8px 14px;cursor:pointer;min-height:44px;font-variant-numeric:tabular-nums;transition:background-color .2s ease}
+@media (hover:hover) and (pointer:fine){.pick:hover{background:var(--hover)}}
+.check{display:flex;align-items:center;gap:10px;font-weight:500;font-size:.9375rem;cursor:pointer;min-height:44px}
+.check input{width:20px;height:20px;accent-color:var(--ink);flex:none}
+.check input:disabled + span{opacity:.5}
+.b-extras{border-top:1px solid var(--line);padding-top:16px;display:flex;flex-direction:column;gap:4px}
+.b-output{display:flex;flex-direction:column;gap:16px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 92px);min-width:0}
+@media (max-width:899px){.b-output{position:static}}
+.b-preview{background:var(--art);border:1px solid var(--line);border-radius:0;aspect-ratio:400/260;max-width:100%;overflow:hidden}
+.b-preview svg{display:block;width:100%;height:100%}
+.b-receipt{background:var(--band);color:var(--band-ink);border:1px solid var(--band-line);border-radius:0;padding:24px;display:flex;flex-direction:column;gap:12px}
+.b-r-head{display:flex;justify-content:space-between;gap:12px;font-size:.75rem;font-weight:600;letter-spacing:.12em;color:var(--gold);border-bottom:1px solid var(--band-line);padding-bottom:12px}
+.b-lines{margin:0;display:grid;gap:10px}
+.b-lines div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;font-size:.9375rem;align-items:baseline}
+.b-lines dt{font-weight:600}
+.b-lines dt small{display:block;font-weight:400;color:var(--band-muted);font-size:.8125rem;margin-top:2px}
+.b-lines dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.b-lines .minus dd{color:var(--gold)}
+.b-total{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:1px solid var(--band-line);padding-top:12px}
+.b-total span{font-weight:600}
+.b-total strong{font-family:var(--f-display);font-weight:700;font-size:2.25rem;letter-spacing:-.03em;line-height:1;color:var(--gold);font-variant-numeric:tabular-nums;white-space:nowrap}
+.b-unit{font-size:.8125rem;color:var(--band-muted);font-variant-numeric:tabular-nums}
+.b-note{font-size:.875rem;color:var(--band-muted)}
+.b-fine{font-size:.75rem;color:var(--band-muted)}
+.b-receipt .btn{align-self:flex-start}
+
+/* footer */
+.foot{border-top:1px solid var(--ink);padding-block:32px}
+.foot-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;font-size:.875rem;color:var(--muted)}
+.foot-row .mono{font-family:var(--f-mono);letter-spacing:.1em}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="#top" aria-label="Jetset Prints 53, home">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><path d="M6 54 L114 10 L44 70 Z" class="f-gold"/><path d="M44 70 L114 10 L62 108 Z" class="f-gold2"/><path d="M44 70 L50 100 L62 108 Z" class="f-gold3"/><g class="s-con" stroke-width="7" stroke-linecap="round"><line x1="2" y1="84" x2="26" y2="74"/><line x1="6" y1="100" x2="30" y2="90"/><line x1="16" y1="114" x2="38" y2="105"/></g></svg>
+      <span class="wm"><span class="wm-top">JETSET</span><span class="wm-bot">PRINTS<i></i><b>53</b></span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#products">Products</a>
+      <a href="#builder">Pricing</a>
+      <a href="#shipping">Shipping</a>
+      <a href="#contact">Contact us</a>
+      <a class="nav-cta" href="https://forms.gle/REPLACE-WITH-YOUR-FORM" target="_blank" rel="noopener">Request a quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="band">
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow">Home print studio · North York, Toronto</p>
+        <h1>Premium print. <span>Ready for takeoff.</span></h1>
+        <p class="lede">Small-run stickers, labels, business cards, event prints and kids’ party favours for Toronto small businesses and families. Designed with you, printed in North York, ready in 1–3 business days.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-gold" href="#products">Browse products</a>
+          <a class="btn btn-line" href="https://forms.gle/REPLACE-WITH-YOUR-FORM" target="_blank" rel="noopener">Request a quote</a>
+        </div>
+        <p class="offer">Launch offer: 15% off your first order with code <span class="code">FLIGHT53</span></p>
+      </div>
+      <div class="board" role="table" aria-label="Turnaround times by product">
+        <div class="board-head" role="row"><span role="columnheader">DEPARTURES</span><span role="columnheader">FLT 53 · NORTH YORK</span></div>
+        <div class="board-row cols" role="row"><span role="columnheader">PRODUCT</span><span role="columnheader">READY IN</span><span role="columnheader" style="justify-self:end">STATUS</span></div>
+        <div class="board-row" role="row"><span class="prod" role="cell">Stickers</span><span class="eta" role="cell">1–3 days</span><span class="status st-board" role="cell">BOARDING</span></div>
+        <div class="board-row" role="row"><span class="prod" role="cell">Labels</span><span class="eta" role="cell">1–3 days</span><span class="status st-board" role="cell">BOARDING</span></div>
+        <div class="board-row" role="row"><span class="prod" role="cell">Business cards</span><span class="eta" role="cell">1–3 days</span><span class="status st-time" role="cell">ON TIME</span></div>
+        <div class="board-row" role="row"><span class="prod" role="cell">Photo prints</span><span class="eta" role="cell">1–3 days</span><span class="status st-time" role="cell">ON TIME</span></div>
+        <div class="board-row" role="row"><span class="prod" role="cell">Party favours</span><span class="eta" role="cell">1 week</span><span class="status st-ahead" role="cell">BOOK AHEAD</span></div>
+        <div class="board-row" role="row" style="border-bottom:none"><span class="prod" role="cell">Event bundles</span><span class="eta" role="cell">1 week</span><span class="status st-ahead" role="cell">BOOK AHEAD</span></div>
+        <p class="board-note">Business days, counted from your proof approval.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="notice">
+    <div class="wrap"><p><strong>Catalogue mode</strong> Online checkout opens soon. For now, send a quote request and we reply with a price and a proof.</p></div>
+  </div>
+
+  <section id="products" class="section" aria-labelledby="products-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Our products</p>
+        <h2 id="products-h">Printed in small runs, finished by hand</h2>
+        <p class="lede">Explore what we print. Pick a product to ask about it, or send us your idea and we'll suggest the right one.</p>
+      </div>
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filter products">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">All products</button>
+          <button class="filter" type="button" data-filter="brands" aria-pressed="false">For small brands</button>
+          <button class="filter" type="button" data-filter="events" aria-pressed="false">For parties and events</button>
+        </div>
+        <p class="count" id="count" aria-live="polite"></p>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="price-note" style="margin-top:18px">Prices in Canadian dollars. Porch pickup is free; delivery and shipping are quoted separately.</p>
+
+      <div class="ticket" aria-label="How ordering works">
+        <div class="stub"><span class="step">STEP 1 · CHECK IN</span><h3>Send your idea</h3><p>Tell us the product, quantity and date you need it. Attach your artwork, or a sketch and we design it.</p></div>
+        <div class="stub"><span class="step">STEP 2 · BOARDING</span><h3>Approve your proof</h3><p>We send a digital proof with one revision included. Nothing prints until you say yes.</p></div>
+        <div class="stub"><span class="step">STEP 3 · ARRIVAL</span><h3>Pick up or get it delivered</h3><p>Porch pickup in North York or courier delivery across the GTA, in 1–3 business days for most items.</p></div>
+      </div>
+      <p class="pay-line">Pay by Interac e-Transfer or card. Custom orders need a 50% deposit; orders under $50 are paid when you approve the proof.</p>
+    </div>
+  </section>
+
+  <section id="builder" class="section" aria-labelledby="builder-h" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Price builder</p>
+        <h2 id="builder-h">Build your order, see the price</h2>
+        <p class="lede">Pick a product, size and quantity. The preview and estimate update as you go, and one tap sends it to the quote form.</p>
+      </div>
+      <div class="builder" id="builder-ui">
+        <div class="b-controls">
+          <div class="b-tabs" role="tablist" aria-label="Product to price">
+            <button class="b-tab" type="button" role="tab" id="bt-stickers" aria-controls="bp-stickers" aria-selected="true" data-tab="stickers">Die-cut stickers</button>
+            <button class="b-tab" type="button" role="tab" id="bt-labels" aria-controls="bp-labels" aria-selected="false" tabindex="-1" data-tab="labels">Product labels</button>
+            <button class="b-tab" type="button" role="tab" id="bt-favours" aria-controls="bp-favours" aria-selected="false" tabindex="-1" data-tab="favours">Party favours</button>
+          </div>
+
+          <div class="b-panel" id="bp-stickers" role="tabpanel" aria-labelledby="bt-stickers">
+            <fieldset class="b-group"><legend>Size</legend><div class="seg">
+              <input type="radio" name="st-size" id="st-size-2" value="2"><label for="st-size-2">2 in</label>
+              <input type="radio" name="st-size" id="st-size-3" value="3" checked><label for="st-size-3">3 in</label>
+              <input type="radio" name="st-size" id="st-size-4" value="4"><label for="st-size-4">4 in</label>
+            </div></fieldset>
+            <fieldset class="b-group"><legend>Shape</legend><div class="seg">
+              <input type="radio" name="st-shape" id="st-shape-circle" value="circle" checked><label for="st-shape-circle">Circle</label>
+              <input type="radio" name="st-shape" id="st-shape-square" value="square"><label for="st-shape-square">Rounded square</label>
+              <input type="radio" name="st-shape" id="st-shape-custom" value="custom"><label for="st-shape-custom">Custom die-cut</label>
+            </div></fieldset>
+            <fieldset class="b-group"><legend>Finish</legend><div class="seg">
+              <input type="radio" name="st-finish" id="st-finish-matte" value="matte"><label for="st-finish-matte">Matte</label>
+              <input type="radio" name="st-finish" id="st-finish-gloss" value="gloss" checked><label for="st-finish-gloss">Gloss</label>
+            </div></fieldset>
+            <div class="b-field"><label class="b-lab" for="st-qty-n">Quantity</label>
+              <div class="qty-row"><input type="range" id="st-qty" min="10" max="200" step="1" value="50" aria-label="Sticker quantity slider"><input type="number" class="b-input b-num" id="st-qty-n" min="10" max="1000" step="1" value="50" inputmode="numeric"></div>
+              <div class="picks"><button class="pick" type="button" data-for="st-qty" data-v="10">10</button><button class="pick" type="button" data-for="st-qty" data-v="25">25</button><button class="pick" type="button" data-for="st-qty" data-v="50">50</button><button class="pick" type="button" data-for="st-qty" data-v="100">100</button><button class="pick" type="button" data-for="st-qty" data-v="200">200</button></div>
+            </div>
+            <div class="b-field"><label class="b-lab" for="st-text">Text for the preview</label><input class="b-input" id="st-text" maxlength="18" value="Your brand" autocomplete="off"></div>
+            <label class="check"><input type="checkbox" id="st-design"><span>Design my sticker (+$30)</span></label>
+          </div>
+
+          <div class="b-panel" id="bp-labels" role="tabpanel" aria-labelledby="bt-labels" hidden>
+            <div class="b-field"><label class="b-lab" for="lb-size">Label shape and size</label>
+              <select class="b-input" id="lb-size"><option value="r15">1.5 in round · 24 per sheet</option><option value="r2" selected>2 in round · 12 per sheet</option><option value="r3">3 in round · 6 per sheet</option><option value="x21">2 × 1 in rectangle · 27 per sheet</option><option value="x32">3 × 2 in rectangle · 8 per sheet</option></select>
+            </div>
+            <fieldset class="b-group"><legend>Finish</legend><div class="seg">
+              <input type="radio" name="lb-finish" id="lb-finish-matte" value="matte" checked><label for="lb-finish-matte">Matte paper</label>
+              <input type="radio" name="lb-finish" id="lb-finish-gloss" value="gloss"><label for="lb-finish-gloss">Gloss paper</label>
+              <input type="radio" name="lb-finish" id="lb-finish-vinyl" value="vinyl"><label for="lb-finish-vinyl">Vinyl</label>
+            </div></fieldset>
+            <div class="b-field"><label class="b-lab" for="lb-qty-n">Number of labels</label>
+              <div class="qty-row"><input type="range" id="lb-qty" min="6" max="300" step="1" value="48" aria-label="Label quantity slider"><input type="number" class="b-input b-num" id="lb-qty-n" min="1" max="5000" step="1" value="48" inputmode="numeric"></div>
+              <div class="picks"><button class="pick" type="button" data-for="lb-qty" data-v="24">24</button><button class="pick" type="button" data-for="lb-qty" data-v="48">48</button><button class="pick" type="button" data-for="lb-qty" data-v="100">100</button><button class="pick" type="button" data-for="lb-qty" data-v="200">200</button></div>
+            </div>
+            <div class="b-field"><label class="b-lab" for="lb-versions">Versions <span class="hint">flavours, scents or designs</span></label><input type="number" class="b-input b-num" id="lb-versions" min="1" max="12" step="1" value="2" inputmode="numeric"></div>
+            <div class="b-field"><label class="b-lab" for="lb-text">Product name for the preview</label><input class="b-input" id="lb-text" maxlength="16" value="Wildflower" autocomplete="off"></div>
+            <label class="check"><input type="checkbox" id="lb-design"><span>Design my labels (+$35)</span></label>
+          </div>
+
+          <div class="b-panel" id="bp-favours" role="tabpanel" aria-labelledby="bt-favours" hidden>
+            <fieldset class="b-group"><legend>Favour</legend><div class="seg seg-stack">
+              <input type="radio" name="fv-item" id="fv-item-book" value="book" checked><label for="fv-item-book">Colouring favour book, 16 pages · $5 each (10+)</label>
+              <input type="radio" name="fv-item" id="fv-item-pack" value="pack"><label for="fv-item-pack">Favour pack: book, name stickers, crayons · $9 each (10+)</label>
+              <input type="radio" name="fv-item" id="fv-item-gift" value="gift"><label for="fv-item-gift">Gift colouring book, 24 pages · $15</label>
+              <input type="radio" name="fv-item" id="fv-item-names" value="names"><label for="fv-item-names">Name sticker sheets · $4 each (10+), $8 single</label>
+            </div></fieldset>
+            <div class="b-field"><label class="b-lab" for="fv-qty-n">Quantity</label>
+              <div class="qty-row"><input type="range" id="fv-qty" min="1" max="60" step="1" value="12" aria-label="Favour quantity slider"><input type="number" class="b-input b-num" id="fv-qty-n" min="1" max="500" step="1" value="12" inputmode="numeric"></div>
+              <div class="picks"><button class="pick" type="button" data-for="fv-qty" data-v="10">10</button><button class="pick" type="button" data-for="fv-qty" data-v="15">15</button><button class="pick" type="button" data-for="fv-qty" data-v="20">20</button><button class="pick" type="button" data-for="fv-qty" data-v="30">30</button></div>
+            </div>
+            <div class="b-field"><label class="b-lab" for="fv-name">Child’s name</label><input class="b-input" id="fv-name" maxlength="14" value="Amira" autocomplete="off"></div>
+          </div>
+
+          <div class="b-extras">
+            <label class="check"><input type="checkbox" id="b-rush"><span>Next-day rush (+$10)</span></label>
+            <label class="check"><input type="checkbox" id="b-first"><span>First order with code FLIGHT53 (15% off)</span></label>
+          </div>
+        </div>
+
+        <div class="b-output">
+          <div class="b-preview" id="b-preview"></div>
+          <div class="b-receipt">
+            <div class="b-r-head"><span>QUOTE ESTIMATE</span><span>FLT 53</span></div>
+            <dl class="b-lines" id="b-lines"></dl>
+            <div class="b-total"><span>Estimated total</span><strong id="b-total">$0.00</strong></div>
+            <p class="b-unit" id="b-unit"></p>
+            <p class="b-note" id="b-note"></p>
+            <button class="btn btn-gold" type="button" id="b-send">Send to the quote form</button>
+            <p class="b-fine">Estimate in Canadian dollars. Porch pickup is free; delivery is quoted separately. Your final price is confirmed with your proof.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="shipping" class="section" aria-labelledby="shipping-h" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Shipping and delivery</p>
+        <h2 id="shipping-h">Pickup, local delivery or shipping</h2>
+      </div>
+      <p class="ship-notice"><strong>Please note:</strong> this site is in catalogue mode, and online checkout will be available soon. The options below show how your order reaches you, so you can plan ahead.</p>
+      <div class="ship-grid">
+        <article class="ship">
+          <div class="ship-top"><h3>Porch pickup</h3><span class="ship-price">Free</span></div>
+          <dl>
+            <div><dt>Timing</dt><dd>Ready in 1–3 business days</dd></div>
+            <div><dt>Area</dt><dd>North York, by appointment</dd></div>
+            <div><dt>Details</dt><dd>Contactless pickup from our porch box. We share the address and a pickup window when your order is ready.</dd></div>
+          </dl>
+        </article>
+        <article class="ship">
+          <div class="ship-top"><h3>GTA courier delivery</h3><span class="ship-price">Courier cost + $3</span></div>
+          <dl>
+            <div><dt>Timing</dt><dd>Same day, once your order is ready</dd></div>
+            <div><dt>Area</dt><dd>Greater Toronto Area</dd></div>
+            <div><dt>Details</dt><dd>Sent by a local same-day courier with tracking. The exact cost comes with your quote.</dd></div>
+          </dl>
+        </article>
+        <article class="ship">
+          <div class="ship-top"><h3>Shipping in Canada</h3><span class="ship-price">Quoted by weight</span></div>
+          <dl>
+            <div><dt>Timing</dt><dd>Depends on destination</dd></div>
+            <div><dt>Area</dt><dd>All provinces and territories</dd></div>
+            <div><dt>Details</dt><dd>Tracked parcel or mail service. Cards and stickers ship flat in rigid mailers.</dd></div>
+          </dl>
+        </article>
+      </div>
+      <div class="extras">
+        <div class="extra"><h3>Rush printing</h3><p>Next day +$10. Same day +25%, when the schedule allows.</p></div>
+        <div class="extra"><h3>Bulk and corporate orders</h3><p>500+ pieces, staff gifts or event runs get a custom quote that includes delivery.</p></div>
+      </div>
+      <p class="disclaimer">Final delivery costs are confirmed on your quote. For a quick estimate, add your postal code to the request form below.</p>
+      <div class="policies">
+        <div class="policy"><h3>Proofs</h3><p>A digital proof before every job, with one revision included.</p></div>
+        <div class="policy"><h3>Reprints</h3><p>Free if the mistake is ours.</p></div>
+        <div class="policy"><h3>Artwork</h3><p>300 dpi PNG or PDF, with 1/8 in bleed for anything printed to the edge. No file? We design it.</p></div>
+        <div class="policy"><h3>Copyright</h3><p>We print only artwork you own or have a licence to use, so no licensed cartoon characters.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" aria-labelledby="contact-h" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="contact-h">Request a quote</h2>
+        <p class="lede">Fill in our quote form and we reply with a price and a proof. Or build your request below and send it to us on Instagram or WhatsApp.</p>
+        <p><a class="btn btn-gold" href="https://forms.gle/REPLACE-WITH-YOUR-FORM" target="_blank" rel="noopener">Open the quote form</a></p>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <form class="form" id="quote-form" novalidate>
+            <div class="row2">
+              <div class="field" id="f-name"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required><span class="err" id="name-err" aria-live="polite"></span></div>
+              <div class="field" id="f-email"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><span class="err" id="email-err" aria-live="polite"></span></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="phone">Phone <span class="hint">optional</span></label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+              <div class="field" id="f-product"><label for="product">Product of interest</label><select id="product" name="product" required></select><span class="err" id="product-err" aria-live="polite"></span></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="qty">Quantity <span class="hint">approximate is fine</span></label><input id="qty" name="qty" inputmode="numeric" placeholder="e.g. 50 stickers"></div>
+              <div class="field"><label for="date">Needed by <span class="hint">optional</span></label><input id="date" name="date" type="date"></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="delivery">Delivery</label><select id="delivery" name="delivery"><option>Porch pickup, North York</option><option>GTA courier delivery</option><option>Shipping in Canada</option><option>Not sure yet</option></select></div>
+              <div class="field"><label for="postal">Postal code <span class="hint">for delivery estimates</span></label><input id="postal" name="postal" autocomplete="postal-code" placeholder="M3J 1P3" maxlength="7"></div>
+            </div>
+            <div class="field" id="f-message"><label for="message">Message</label><textarea id="message" name="message" required placeholder="Size, finish, colours, the wording you want, or anything else we should know."></textarea><span class="err" id="message-err" aria-live="polite"></span></div>
+            <div class="row2">
+              <div class="field"><label for="promo">Promo code <span class="hint">optional</span></label><input id="promo" name="promo" placeholder="FLIGHT53" autocapitalize="characters"></div>
+              <div class="field"><label for="artwork">Artwork <span class="hint">attach it in your message</span></label><select id="artwork" name="artwork"><option>I have print-ready artwork</option><option>I have a logo or rough idea</option><option>Please design it for me</option></select></div>
+            </div>
+            <div class="form-foot">
+              <p>Your request stays in this page. You send it to us yourself in the next step.</p>
+              <button class="btn btn-gold" type="submit">Prepare my request</button>
+            </div>
+          </form>
+
+          <div class="result" id="result" hidden aria-live="polite">
+            <p class="eyebrow">Request ready</p>
+            <h3>Send this to <span style="white-space:nowrap">@jetsetprints53.ca</span></h3>
+            <p class="lede" style="font-size:.95rem">Copy your request and paste it into an Instagram or WhatsApp message to us, or email it to jetsetprints53@gmail.com. We reply with a quote and a proof. Your reference is <span class="ref" id="ref"></span>.</p>
+            <label class="sr" for="summary">Your request</label>
+            <textarea id="summary" readonly></textarea>
+            <div class="result-actions">
+              <button class="btn btn-gold" type="button" id="copy">Copy request</button>
+              <a class="btn btn-line" href="https://ig.me/m/jetsetprints53.ca" target="_blank" rel="noopener">Open Instagram</a>
+              <a class="btn btn-line" href="https://wa.me/message/CC2LEJFYG63SD1" target="_blank" rel="noopener">Open WhatsApp</a>
+              <button class="btn btn-line" type="button" id="edit">Edit request</button>
+              <span class="copy-status" id="copy-status" aria-live="polite"></span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="aside" aria-label="Direct contact">
+          <div class="info dark">
+            <span class="k">Order by message</span>
+            <a class="v" href="https://instagram.com/jetsetprints53.ca" target="_blank" rel="noopener">@jetsetprints53.ca</a>
+            <p>Send us a DM on Instagram with your request, artwork or questions.</p>
+          </div>
+          <div class="info">
+            <span class="k">WhatsApp</span>
+            <a class="v" href="https://wa.me/message/CC2LEJFYG63SD1" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <p>Quick questions, quotes and order updates. Send photos or artwork right in the chat.</p>
+          </div>
+          <div class="info">
+            <span class="k">Email</span>
+            <a class="v" href="mailto:jetsetprints53@gmail.com">jetsetprints53@gmail.com</a>
+            <p>Prefer email? Send your request or artwork files here.</p>
+          </div>
+          <div class="info">
+            <span class="k">Pickup</span>
+            <span class="v">North York, Toronto</span>
+            <p>Contactless porch pickup by appointment. We share the address when your order is ready.</p>
+          </div>
+          <div class="info">
+            <span class="k">Turnaround</span>
+            <span class="v">1–3 business days</span>
+            <p>For most paper products, from proof approval. Book event bundles and party favours a week ahead.</p>
+          </div>
+          <div class="info">
+            <span class="k">Launch offer</span>
+            <span class="v">15% off your first order</span>
+            <p>Add code <span class="code" style="color:var(--gold-ink);border-color:var(--gold-ink)">FLIGHT53</span> to your request.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="flip-modal" id="flip-modal" hidden>
+  <div class="flip-backdrop" data-close="1"></div>
+  <div class="flip-panel" role="dialog" aria-modal="true" aria-labelledby="flip-title">
+    <div class="flip-head">
+      <div><p class="eyebrow">Sample book · 5.5 × 8.5 in</p><h3 id="flip-title">Personalized colouring book</h3></div>
+      <button class="flip-x" type="button" id="flip-close" aria-label="Close the sample book"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="flip-name"><label for="flip-name">Child’s name</label><input id="flip-name" maxlength="14" value="Amira" autocomplete="off" spellcheck="false"><span class="hint">Type a name to see it on every page.</span></div>
+    <div class="book-stage"><div class="book at-start" id="book"></div></div>
+    <div class="flip-controls">
+      <button class="btn btn-line" type="button" id="flip-prev">Previous</button>
+      <span class="flip-status" id="flip-status" aria-live="polite">Front cover</span>
+      <button class="btn btn-gold" type="button" id="flip-next">Next page</button>
+    </div>
+    <div class="flip-foot"><p>Tap a page or use the arrow keys to turn it. These are sample pages; each book has 16 pages to colour, folded and stapled.</p><button class="btn btn-ghost" type="button" id="flip-order">Order this book</button></div>
+  </div>
+</div>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <span><strong style="color:var(--ink)">Jetset Prints 53</strong> · Premium print, ready for takeoff</span>
+    <span class="mono">NORTH YORK · TORONTO · <a href="https://instagram.com/jetsetprints53.ca" target="_blank" rel="noopener">@JETSETPRINTS53.CA</a> · <a href="https://wa.me/message/CC2LEJFYG63SD1" target="_blank" rel="noopener">WHATSAPP</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var CAT = { brands: 'Small brands', events: 'Parties and events' };
+
+  function plane(x, y, s){
+    return '<g transform="translate(' + x + ' ' + y + ') scale(' + s + ')"><path d="M6 54 L114 10 L44 70 Z" class="f-gold"/><path d="M44 70 L114 10 L62 108 Z" class="f-gold2"/><path d="M44 70 L50 100 L62 108 Z" class="f-gold3"/><g class="s-con" stroke-width="5" stroke-linecap="round"><line x1="2" y1="84" x2="26" y2="74"/><line x1="6" y1="100" x2="30" y2="90"/><line x1="16" y1="114" x2="38" y2="105"/></g></g>';
+  }
+  function photo(x, y, w, h){
+    var m = Math.max(4, Math.round(w * 0.07));
+    var ix = x + m, iy = y + m, iw = w - 2 * m, ih = h - 2 * m;
+    return '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" class="f-white s-edge"/>' +
+      '<rect x="' + ix + '" y="' + iy + '" width="' + iw + '" height="' + ih + '" class="f-con"/>' +
+      '<circle cx="' + (ix + iw * 0.72) + '" cy="' + (iy + ih * 0.3) + '" r="' + (iw * 0.12) + '" class="f-gold"/>' +
+      '<path d="M' + ix + ' ' + (iy + ih) + ' L' + (ix + iw * 0.38) + ' ' + (iy + ih * 0.48) + ' L' + (ix + iw * 0.62) + ' ' + (iy + ih * 0.78) + ' L' + (ix + iw * 0.78) + ' ' + (iy + ih * 0.6) + ' L' + (ix + iw) + ' ' + (iy + ih) + ' Z" class="f-jet"/>';
+  }
+  var TAG = 'M50 4 H248 Q256 4 256 12 V138 Q256 146 248 146 H50 L4 75 Z';
+  function tag(x, y, rot, fill, word, ink){
+    return '<g transform="translate(' + x + ' ' + y + ') rotate(' + rot + ') scale(.42)"><path d="' + TAG + '" class="' + fill + ' s-edge" stroke-width="2.4"/><circle cx="44" cy="75" r="10" class="f-art"/><text x="160" y="88" text-anchor="middle" class="t-disp ' + ink + '" font-size="34">' + word + '</text></g>';
+  }
+  var SV = function(label, inner){ return '<svg viewBox="0 0 320 200" role="img" aria-label="' + label + '">' + inner + '</svg>'; };
+
+  var ART = {
+    stickers: SV('Three die-cut vinyl stickers',
+      '<g transform="rotate(-8 100 104)"><circle cx="100" cy="104" r="62" class="f-white s-edge"/><circle cx="100" cy="104" r="53" class="f-gold"/><text x="100" y="80" text-anchor="middle" class="t-mono f-jet" font-size="9" letter-spacing="2">JETSET</text><text x="100" y="121" text-anchor="middle" class="t-disp f-jet" font-size="44">53</text></g>' +
+      '<g transform="rotate(7 222 72)"><rect x="164" y="38" width="116" height="68" rx="18" class="f-white s-edge"/><rect x="171" y="45" width="102" height="54" rx="12" class="f-jet"/><text x="222" y="69" text-anchor="middle" class="t-mono f-gold" font-size="11" letter-spacing="1.5">SHOP</text><text x="222" y="86" text-anchor="middle" class="t-mono f-gold" font-size="11" letter-spacing="1.5">LOCAL</text></g>' +
+      '<g transform="rotate(-10 232 150)"><path d="M232 108 L245 137 L274 150 L245 163 L232 192 L219 163 L190 150 L219 137 Z" class="f-white s-edge"/><path d="M232 119 L242 140 L263 150 L242 160 L232 181 L222 160 L201 150 L222 140 Z" class="f-gold2"/></g>'),
+    labels: SV('Honey jar with a bilingual label beside a sheet of round labels',
+      '<rect x="96" y="22" width="88" height="20" rx="4" class="f-jet s-edge"/><rect x="84" y="40" width="112" height="146" rx="22" class="f-gold"/><rect x="93" y="50" width="9" height="122" rx="4.5" class="f-white" opacity=".35"/>' +
+      '<rect x="84" y="82" width="112" height="70" class="f-white"/><text x="140" y="104" text-anchor="middle" class="t-disp f-jet" font-size="11">WILDFLOWER</text><text x="140" y="119" text-anchor="middle" class="t-mono f-jet" font-size="9">HONEY · MIEL</text><line x1="100" y1="128" x2="180" y2="128" class="s-line" stroke-width="1.2"/><text x="140" y="143" text-anchor="middle" class="t-mono f-pmuted" font-size="8">250 g · NORTH YORK</text>' +
+      '<g transform="rotate(4 262 104)"><rect x="216" y="44" width="92" height="120" rx="4" class="f-white s-edge"/><circle cx="239" cy="70" r="15" class="f-gold2"/><circle cx="285" cy="70" r="15" class="f-gold2"/><circle cx="239" cy="104" r="15" class="f-jet"/><circle cx="285" cy="104" r="15" class="f-gold2"/><circle cx="239" cy="138" r="15" class="f-gold2"/><circle cx="285" cy="138" r="15" class="f-line"/></g>'),
+    cards: SV('Two business cards, one black with a gold paper plane and one white',
+      '<defs><linearGradient id="foil-g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="150" y2="64" spreadMethod="reflect"><stop offset="0" stop-color="#ff8fd2"/><stop offset=".3" stop-color="#ffe9a6"/><stop offset=".55" stop-color="#9ff6ff"/><stop offset=".8" stop-color="#c7b3ff"/><stop offset="1" stop-color="#ff8fd2"/></linearGradient></defs>' +
+      '<g transform="rotate(-9 128 90)"><rect x="50" y="44" width="156" height="90" rx="6" class="f-jet s-edge"/>' + plane(109, 56, 0.32) + '<text x="128" y="122" text-anchor="middle" class="t-mono f-gold" font-size="8" letter-spacing="2">PREMIUM PRINT</text><rect x="50" y="44" width="156" height="90" rx="6" fill="url(#foil-g)" class="foil-layer"/></g>' +
+      '<g transform="rotate(6 196 126)"><rect x="118" y="81" width="156" height="90" rx="6" class="f-white s-edge"/><text x="136" y="111" class="t-disp f-jet" font-size="12">YOUR NAME</text><text x="136" y="125" class="t-mono f-pmuted" font-size="8">Owner · Studio</text><rect x="136" y="140" width="84" height="4" rx="2" class="f-line"/><rect x="136" y="150" width="62" height="4" rx="2" class="f-line"/><rect x="244" y="93" width="18" height="18" rx="3" class="f-gold"/></g>'),
+    magnets: SV('A business-card magnet and a photo magnet on a fridge door',
+      '<rect x="24" y="14" width="272" height="172" rx="14" class="f-fridge s-edge"/><rect x="268" y="40" width="8" height="120" rx="4" class="f-con"/>' +
+      '<g transform="rotate(-5 110 82)"><rect x="46" y="46" width="128" height="73" rx="8" class="f-jet"/><text x="60" y="74" class="t-disp f-gold" font-size="12">SAVE OUR</text><text x="60" y="89" class="t-disp f-gold" font-size="12">NUMBER</text><rect x="60" y="100" width="70" height="4" rx="2" class="f-con"/></g>' +
+      '<g transform="rotate(6 194 136)">' + photo(160, 88, 66, 96) + '</g>'),
+    plan: SV('A boarding pass for the monthly Frequent Flyer reorder plan',
+      '<g transform="rotate(-4 160 100)"><rect x="30" y="46" width="260" height="108" rx="10" class="f-white s-edge"/><circle cx="212" cy="46" r="9" class="f-art"/><circle cx="212" cy="154" r="9" class="f-art"/><line x1="212" y1="60" x2="212" y2="140" class="s-line" stroke-width="1.5" stroke-dasharray="4 4"/>' +
+      '<text x="46" y="70" class="t-mono f-gold3" font-size="8" letter-spacing="1.5">BOARDING PASS · FLT 53</text><text x="46" y="97" class="t-disp f-jet" font-size="18">FREQUENT</text><text x="46" y="118" class="t-disp f-jet" font-size="18">FLYER</text><text x="46" y="138" class="t-mono f-pmuted" font-size="8">MONTHLY · LABELS + STICKERS</text>' +
+      '<text x="226" y="72" class="t-mono f-pmuted" font-size="8">GATE</text><text x="226" y="97" class="t-disp f-jet" font-size="22">53</text>' +
+      '<g class="f-jet"><rect x="226" y="110" width="3" height="30"/><rect x="232" y="110" width="1.5" height="30"/><rect x="236" y="110" width="4" height="30"/><rect x="243" y="110" width="1.5" height="30"/><rect x="247" y="110" width="3" height="30"/><rect x="253" y="110" width="1.5" height="30"/><rect x="257" y="110" width="4" height="30"/><rect x="264" y="110" width="2" height="30"/><rect x="269" y="110" width="3" height="30"/></g></g>'),
+    kit: SV('A starter kit of label sheet, business card and round sticker',
+      '<g transform="rotate(-6 85 90)"><rect x="40" y="30" width="90" height="120" rx="4" class="f-white s-edge"/><rect x="50" y="42" width="32" height="22" rx="3" class="f-gold2"/><rect x="88" y="42" width="32" height="22" rx="3" class="f-gold2"/><rect x="50" y="72" width="32" height="22" rx="3" class="f-jet"/><rect x="88" y="72" width="32" height="22" rx="3" class="f-gold2"/><rect x="50" y="102" width="32" height="22" rx="3" class="f-gold2"/><rect x="88" y="102" width="32" height="22" rx="3" class="f-line"/></g>' +
+      '<g transform="rotate(5 185 108)"><rect x="120" y="70" width="130" height="75" rx="6" class="f-jet s-edge"/>' + plane(168, 84, 0.27) + '<text x="185" y="132" text-anchor="middle" class="t-mono f-gold" font-size="8" letter-spacing="2">YOUR BRAND</text></g>' +
+      '<g transform="rotate(-12 252 150)"><circle cx="252" cy="150" r="30" class="f-white s-edge"/><circle cx="252" cy="150" r="24" class="f-gold"/><text x="252" y="155" text-anchor="middle" class="t-disp f-jet" font-size="13">NEW</text></g>'),
+    menus: SV('A cafe menu card in front of a black flyer',
+      '<g transform="rotate(-10 105 100)"><rect x="60" y="40" width="90" height="120" rx="4" class="f-jet s-edge"/><text x="105" y="96" text-anchor="middle" class="t-disp f-gold" font-size="16">OPEN</text><text x="105" y="114" text-anchor="middle" class="t-mono f-con" font-size="7" letter-spacing="1.5">7 DAYS</text></g>' +
+      '<rect x="128" y="16" width="112" height="168" rx="6" class="f-white s-edge"/><text x="184" y="44" text-anchor="middle" class="t-disp f-jet" font-size="15">MENU</text><rect x="168" y="52" width="32" height="2" class="f-gold"/>' +
+      '<g class="t-mono f-jet" font-size="7.5"><text x="140" y="76">Chai latte</text><text x="228" y="76" text-anchor="end">4.50</text><text x="140" y="96">Cardamom bun</text><text x="228" y="96" text-anchor="end">3.75</text><text x="140" y="116">Mango lassi</text><text x="228" y="116" text-anchor="end">5.00</text><text x="140" y="136">Samosa (2)</text><text x="228" y="136" text-anchor="end">4.00</text></g>' +
+      '<g class="s-line" stroke-width="1" stroke-dasharray="1.5 3"><line x1="186" y1="74" x2="206" y2="74"/><line x1="198" y1="94" x2="206" y2="94"/><line x1="192" y1="114" x2="206" y2="114"/><line x1="190" y1="134" x2="206" y2="134"/></g>' +
+      '<path d="M128 150 L200 16 L222 16 L150 184 L128 184 Z" class="f-white" opacity=".28"/>'),
+    bundle: SV('A welcome sign on an easel with gift tags and favour stickers',
+      '<g class="s-con" stroke-width="4" stroke-linecap="round"><line x1="130" y1="40" x2="104" y2="190"/><line x1="190" y1="40" x2="216" y2="190"/><line x1="160" y1="60" x2="160" y2="188"/></g>' +
+      '<rect x="96" y="26" width="128" height="106" rx="4" class="f-white s-edge"/><text x="160" y="66" text-anchor="middle" class="t-disp f-jet" font-size="18">WELCOME</text><text x="160" y="84" text-anchor="middle" class="t-mono f-pmuted" font-size="7.5" letter-spacing="1.2">TO THE CELEBRATION</text><rect x="140" y="94" width="40" height="2" class="f-gold"/><text x="160" y="114" text-anchor="middle" class="t-mono f-gold3" font-size="7.5" letter-spacing="1.2">SATURDAY · 6 PM</text>' +
+      tag(14, 128, -10, 'f-gold', '', 'f-jet') + tag(30, 150, 8, 'f-jet', '', 'f-gold') +
+      '<circle cx="254" cy="146" r="17" class="f-gold"/><circle cx="282" cy="168" r="12" class="f-jet s-edge"/><circle cx="246" cy="178" r="10" class="f-gold2"/>'),
+    colouring: SV('A personalized colouring book cover beside an open line-art page and a crayon',
+      '<g transform="rotate(-7 110 100)"><rect x="52" y="22" width="112" height="158" rx="4" class="f-white s-edge"/><text x="66" y="46" class="t-mono f-gold3" font-size="6.5" letter-spacing="1">BOARDING PASS · FLT 53</text><text x="66" y="72" class="t-disp f-jet" font-size="17">AMIRA’S</text><text x="66" y="88" class="t-disp f-jet" font-size="8">SKY-HIGH</text><text x="66" y="99" class="t-disp f-jet" font-size="8">COLOURING BOOK</text>' + plane(78, 110, 0.42) + '<circle cx="148" cy="118" r="9" class="f-gold"/></g>' +
+      '<g transform="rotate(5 222 105)"><rect x="166" y="30" width="112" height="150" rx="4" class="f-white s-edge"/>' +
+      '<g transform="translate(176 66) scale(.3)" class="s-jet" stroke-width="7" stroke-linejoin="round"><path d="M160 52 L140 22 L165 22 L195 50 Z"/><path d="M60 58 L36 14 L70 14 L100 52 Z"/><path d="M40 80 C40 58 70 50 110 50 L220 50 C255 50 285 66 290 80 C285 94 255 106 220 106 L110 106 C70 106 40 100 40 80 Z"/><path d="M150 92 L110 150 L150 150 L202 98 Z"/></g>' +
+      '<path transform="translate(232 36) scale(.32)" d="M20 60 C5 60 5 40 20 38 C22 22 45 18 52 30 C58 14 85 16 86 34 C102 32 108 52 94 60 Z" class="s-jet" stroke-width="6"/>' +
+      '<g class="s-jet" stroke-width="1.6"><rect x="178" y="140" width="18" height="30"/><rect x="200" y="128" width="16" height="42"/><path d="M226 170 L228 120 L232 120 L234 170 Z"/><ellipse cx="230" cy="126" rx="8" ry="3.5"/><rect x="240" y="136" width="18" height="34"/><line x1="172" y1="170" x2="272" y2="170"/></g></g>' +
+      '<g transform="rotate(-30 276 168)"><rect x="236" y="162" width="60" height="12" rx="2" class="f-gold"/><path d="M296 162 L308 168 L296 174 Z" class="f-gold2"/></g>'),
+    namestickers: SV('A sheet of kids name stickers beside a lunch box with a name label',
+      '<g transform="rotate(-4 115 104)"><rect x="40" y="24" width="150" height="160" rx="6" class="f-white s-edge"/>' +
+      '<rect x="52" y="38" width="126" height="30" rx="15" class="f-gold"/><text x="115" y="58" text-anchor="middle" class="t-disp f-jet" font-size="14">AMIRA</text>' +
+      '<circle cx="78" cy="104" r="24" class="f-jet"/>' + plane(64, 90, 0.22) +
+      '<path d="M150 80 L157 97 L174 104 L157 111 L150 128 L143 111 L126 104 L143 97 Z" class="f-gold2"/>' +
+      '<rect x="52" y="140" width="126" height="30" rx="15" class="f-jet"/><text x="115" y="160" text-anchor="middle" class="t-disp f-gold" font-size="14">AMIRA</text></g>' +
+      '<g transform="rotate(8 250 112)"><path d="M232 62 Q250 40 268 62" class="s-jet" stroke-width="4"/><rect x="206" y="60" width="88" height="100" rx="12" class="f-con s-edge"/><rect x="216" y="94" width="68" height="28" rx="14" class="f-white s-edge"/><text x="250" y="113" text-anchor="middle" class="t-disp f-jet" font-size="11">ZAYN</text></g>'),
+    photos: SV('Photo prints at 13 by 19, 8 by 10 and 5 by 7 inches',
+      photo(40, 24, 91, 133) + photo(152, 87, 56, 70) + photo(228, 108, 35, 49) +
+      '<g class="t-mono f-muted" font-size="9" text-anchor="middle"><text x="85" y="178">13 × 19</text><text x="180" y="178">8 × 10</text><text x="245" y="178">5 × 7</text></g>'),
+    holiday: SV('Holiday gift tags reading joy, peace and thanks',
+      tag(26, 30, -8, 'f-gold', 'JOY', 'f-jet') + tag(150, 54, 5, 'f-jet', 'PEACE', 'f-gold') + tag(78, 118, -3, 'f-white', 'THANKS', 'f-jet')),
+  };
+
+  var PRODUCTS = [
+    { id:'stickers', cat:'brands', name:'Die-cut vinyl stickers', short:'stickers', from:'from $15',
+      desc:'Matte or gloss vinyl stickers, cut to the shape of your artwork. Made for packaging, envelopes, planners and giveaways.',
+      tiers:[['10 × 3 in','$15'],['50 × 3 in','$60'],['100 × 3 in','$95'],['100 × 3 in + design','$125']],
+      opts:[['Finish','Gloss or matte, for indoor use'],['Sizes','2 in, 3 in, 4 in or custom'],['Material','Printable vinyl sticker paper']],
+      eta:'1–3 business days' },
+    { id:'labels', cat:'brands', name:'Product labels', short:'labels', from:'from $12 a sheet',
+      desc:'Labels for jars, candles, soaps and boxes, printed in small runs so every flavour or scent gets its own. Bilingual English and French layouts on request.',
+      tiers:[['1 sheet','$12'],['5 sheets','$55'],['10 sheets + label design','$135']],
+      opts:[['Finish','Matte paper, gloss paper or vinyl'],['Shapes','Round, rectangle or custom die-cut'],['Format','Letter-size sheets, any shape our cutter can follow']],
+      eta:'1–3 business days' },
+    { id:'cards', cat:'brands', foil:true, name:'Business cards', short:'business cards', from:'from $29',
+      desc:'Full-colour, double-sided cards on heavy stock. Send your file or let us design it. Larger runs go to a trusted trade printer, so you still get a good price.',
+      tiers:[['100, your artwork','$29'],['100 shaped (die-cut)','$49'],['100 + design','$65'],['1,000 standard','$99'],['500 thick stock + design','$129']],
+      opts:[['Finish','Matte, gloss or uncoated'],['Size','3.5 × 2 in, rounded corners or a custom shape'],['Stock','Heavy card stock. 500+ printed by our trade partner']],
+      eta:'1–3 business days (500+: 4–6)' },
+    { id:'magnets', cat:'brands', name:'Magnets', short:'magnets', from:'from $15',
+      desc:'Business-card magnets keep your number on the fridge, which is why realtors, cleaners and caterers order them. Photo magnets make an easy gift.',
+      tiers:[['4 photo magnets, 4 × 6 in','$15'],['25 business-card magnets','$45']],
+      opts:[['Finish','Gloss or matte'],['Sizes','3.5 × 2 in or 4 × 6 in'],['Material','Flexible printable magnet sheet']],
+      eta:'1–3 business days' },
+    { id:'menus', cat:'brands', name:'Menus and flyers', short:'menus', from:'from $75',
+      desc:'Short-run menus, price lists and flyers for cafés, home kitchens and salons, printed on heavy card stock.',
+      tiers:[['25 letter menus on heavy card stock','$75']],
+      opts:[['Stock','Heavy matte or gloss card'],['Sizes','Letter or tabloid, single or double-sided'],['Folds','Tri-fold on request']],
+      eta:'1–3 business days' },
+    { id:'kit', cat:'brands', name:'Brand starter kit', short:'the starter kit', from:'$249',
+      desc:'Everything a new small business needs to look established on day one, all designed to match: business cards, stickers and product labels.',
+      tiers:[['250 cards + 100 stickers + 5 label sheets, with design','$249']],
+      opts:[['Includes','Design of all three items'],['Cards','Printed by our trade partner'],['Stickers','Printed and cut in-house']],
+      eta:'4–6 business days' },
+    { id:'plan', cat:'brands', name:'Frequent Flyer reorder plan', short:'the reorder plan', from:'$79 a month',
+      desc:'For businesses that relabel every month. Each month includes up to 6 label sheets, 50 stickers and one artwork change, with priority printing.',
+      tiers:[['Monthly, 3-month minimum','$79'],['Prepaid year (one month free)','$869']],
+      opts:[['Includes','6 label sheets, 50 stickers, 1 artwork change'],['Best for','Home bakers, cafés, candle and soap makers'],['Changes','Update flavours or dates each month']],
+      eta:'Priority, 1–2 business days' },
+    { id:'bundle', cat:'events', name:'Event bundle', short:'the event bundle', from:'from $149',
+      desc:'One matching set for a birthday, wedding, Eid or Diwali party: a welcome sign, 10 table cards, 40 favour stickers and 24 gift tags. Design included.',
+      tiers:[['Full bundle with design','$149']],
+      opts:[['Sign','Up to 13 × 19 in. Larger signs quoted'],['Theme','Your colours, names and wording'],['Timing','Order at least a week before your event']],
+      eta:'About 1 week' },
+    { id:'colouring', cat:'events', preview:true, name:'Personalized colouring books', short:'colouring books', from:'from $5 each',
+      desc:'Original colouring pages with the birthday child’s name on the cover and inside. Made for party bags, Eid and Diwali gifts, and rainy afternoons.',
+      tiers:[['16-page favour book, 10 or more','$5 each'],['Favour pack: book, name stickers and crayons, 10 or more','$9 each'],['24-page gift book','$15']],
+      opts:[['Format','5.5 × 8.5 in booklet, folded and stapled'],['Themes','Sky-high planes, with more themes on request'],['Paper','Heavy inside pages, so markers don’t bleed through']],
+      eta:'About 1 week, so order before your party' },
+    { id:'namestickers', cat:'events', name:'Kids name stickers', short:'name stickers', from:'from $4 a sheet',
+      desc:'Sticker sheets with each child’s name and a party theme, cut to shape and ready to peel. Also made as name labels for books, folders and daycare cubbies.',
+      tiers:[['Party favour sheets, 10 or more','$4 each'],['Single name sheet','$8'],['School and daycare name labels, 2 sheets','$15']],
+      opts:[['Finish','Gloss or matte vinyl, for indoor use'],['Shapes','Round, star, plane or custom die-cut'],['Names','A different name on each guest’s sheet']],
+      eta:'1–3 business days' },
+    { id:'photos', cat:'events', name:'Photo prints and posters', short:'photo prints', from:'from $2',
+      desc:'Six-colour photo prints on heavy photo paper, up to 13 × 19 in. Made for portraits, art prints and party welcome signs we design for you.',
+      tiers:[['5 × 7 in','$2'],['8 × 10 in','$3.50'],['11 × 17 in poster','$6'],['13 × 19 in poster','$10'],['Designed party sign, 13 × 19 in','$35']],
+      opts:[['Finish','Lustre, gloss or matte photo paper'],['Party signs','Your names, date and theme. Design included'],['Extras','Mounting quoted on request']],
+      eta:'1–3 business days' },
+    { id:'holiday', cat:'events', name:'Holiday tags and cards', short:'holiday tags', from:'from $25',
+      desc:'Custom gift tags and greeting cards with your name, logo or family photo. Holiday print slots fill fast, so order by December 10.',
+      tiers:[['50 gift tags','$25'],['25 greeting cards','$40']],
+      opts:[['Stock','White, kraft or black card'],['Tags','Punched for ribbon or string'],['Also','Invitations, 25 for $40']],
+      eta:'1–3 business days' },
+  ];
+
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+  var grid = document.getElementById('grid');
+  grid.innerHTML = PRODUCTS.map(function(p){
+    return '<article class="card" data-cat="' + p.cat + '" id="p-' + p.id + '">' +
+      '<div class="art' + (p.foil ? ' foil' : '') + '">' + ART[p.id] + '</div>' +
+      '<div class="card-body">' +
+        '<div class="card-top"><span class="chip">' + esc(CAT[p.cat]) + '</span><span class="from">' + esc(p.from) + '</span></div>' +
+        '<h3>' + esc(p.name) + '</h3>' +
+        '<p class="desc">' + esc(p.desc) + '</p>' +
+        '<table class="tiers"><caption class="sr">Prices for ' + esc(p.name) + '</caption><tbody>' +
+          p.tiers.map(function(t){ return '<tr><th scope="row">' + esc(t[0]) + '</th><td>' + esc(t[1]) + '</td></tr>'; }).join('') +
+        '</tbody></table>' +
+        '<dl class="opts">' + p.opts.map(function(o){ return '<div><dt>' + esc(o[0]) + '</dt><dd>' + esc(o[1]) + '</dd></div>'; }).join('') + '</dl>' +
+        '<p class="eta-line"><span>Ready in</span>' + esc(p.eta) + '</p>' +
+        (p.preview ? '<button class="btn btn-gold flip-open" type="button">Flip through a sample</button>' : '') +
+        '<button class="btn btn-ghost ask" type="button" data-product="' + p.id + '">Ask about ' + esc(p.short) + '</button>' +
+      '</div></article>';
+  }).join('');
+
+  // filters
+  var countEl = document.getElementById('count');
+  function applyFilter(f){
+    var n = 0;
+    Array.prototype.forEach.call(grid.children, function(c){
+      var show = f === 'all' || c.getAttribute('data-cat') === f;
+      c.hidden = !show; if (show) n++;
+    });
+    countEl.textContent = 'Showing ' + n + ' of ' + PRODUCTS.length + ' products';
+    document.querySelectorAll('.filter').forEach(function(b){ b.setAttribute('aria-pressed', String(b.getAttribute('data-filter') === f)); });
+  }
+  document.querySelectorAll('.filter').forEach(function(b){
+    b.addEventListener('click', function(){ applyFilter(b.getAttribute('data-filter')); });
+  });
+  applyFilter('all');
+
+  // product select
+  var sel = document.getElementById('product');
+  sel.innerHTML = '<option value="">Choose a product</option>' +
+    PRODUCTS.map(function(p){ return '<option value="' + p.id + '">' + esc(p.name) + '</option>'; }).join('') +
+    '<option value="bulk">Bulk or corporate order</option><option value="general">General question</option>';
+
+  grid.addEventListener('click', function(e){
+    var btn = e.target.closest('.ask'); if (!btn) return;
+    sel.value = btn.getAttribute('data-product');
+    clearErr('product');
+    document.getElementById('contact').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+    var target = document.getElementById('name').value ? document.getElementById('message') : document.getElementById('name');
+    setTimeout(function(){ try { target.focus({ preventScroll: true }); } catch(_) { target.focus(); } }, 450);
+  });
+
+  // date min = today
+  (function(){
+    var d = new Date(), m = String(d.getMonth() + 1).padStart(2,'0'), day = String(d.getDate()).padStart(2,'0');
+    document.getElementById('date').min = d.getFullYear() + '-' + m + '-' + day;
+  })();
+
+  // form
+  var form = document.getElementById('quote-form');
+  var result = document.getElementById('result');
+  var summary = document.getElementById('summary');
+  var copyStatus = document.getElementById('copy-status');
+
+  function setErr(id, msg){ document.getElementById('f-' + id).classList.add('invalid'); document.getElementById(id + '-err').textContent = msg; }
+  function clearErr(id){ var f = document.getElementById('f-' + id); if (f) f.classList.remove('invalid'); var e = document.getElementById(id + '-err'); if (e) e.textContent = ''; }
+  ['name','email','product','message'].forEach(function(id){
+    document.getElementById(id).addEventListener('input', function(){ clearErr(id); });
+    document.getElementById(id).addEventListener('change', function(){ clearErr(id); });
+  });
+
+  function val(id){ return document.getElementById(id).value.trim(); }
+  function refId(){
+    var n = 0;
+    try { var a = new Uint16Array(1); crypto.getRandomValues(a); n = a[0] % 10000; } catch(_) { n = Math.floor(Math.random() * 10000); }
+    return 'JP53-' + String(n).padStart(4, '0');
+  }
+  function fmtDate(s){
+    if (!s) return '';
+    var p = s.split('-'); var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return months[Number(p[1]) - 1] + ' ' + Number(p[2]) + ', ' + p[0];
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var ok = true, first = null;
+    if (!val('name')) { setErr('name', 'Add your name so we know who to reply to.'); ok = false; first = first || 'name'; }
+    var em = val('email');
+    if (!em) { setErr('email', 'Add an email address for your quote.'); ok = false; first = first || 'email'; }
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) { setErr('email', 'Check the email address. It should look like name@example.com.'); ok = false; first = first || 'email'; }
+    if (!val('product')) { setErr('product', 'Choose a product, or pick General question.'); ok = false; first = first || 'product'; }
+    if (!val('message')) { setErr('message', 'Tell us a little about what you need.'); ok = false; first = first || 'message'; }
+    if (!ok) { document.getElementById(first).focus(); return; }
+
+    var prodText = sel.options[sel.selectedIndex].text;
+    var ref = refId();
+    var promo = val('promo').toUpperCase();
+    var lines = [
+      'Jetset Prints 53 · Quote request ' + ref,
+      '',
+      'Name: ' + val('name'),
+      'Email: ' + em
+    ];
+    if (val('phone')) lines.push('Phone: ' + val('phone'));
+    lines.push('Product: ' + prodText);
+    if (val('qty')) lines.push('Quantity: ' + val('qty'));
+    if (val('date')) lines.push('Needed by: ' + fmtDate(val('date')));
+    lines.push('Delivery: ' + val('delivery'));
+    if (val('postal')) lines.push('Postal code: ' + val('postal').toUpperCase());
+    lines.push('Artwork: ' + val('artwork'));
+    if (promo) lines.push('Promo code: ' + promo);
+    lines.push('', 'Details:', val('message'));
+    summary.value = lines.join('\n');
+    document.getElementById('ref').textContent = ref;
+    copyStatus.textContent = '';
+    form.hidden = true;
+    result.hidden = false;
+    result.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  });
+
+  document.getElementById('copy').addEventListener('click', function(){
+    var text = summary.value;
+    function fallback(){
+      summary.focus(); summary.select();
+      var done = false;
+      try { done = document.execCommand('copy'); } catch(_) { done = false; }
+      copyStatus.textContent = done ? 'Copied. Paste it into your Instagram message.' : 'The text is selected. Copy it with your keyboard or long-press.';
+    }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function(){ copyStatus.textContent = 'Copied. Paste it into your Instagram message.'; }, fallback);
+      } else { fallback(); }
+    } catch(_) { fallback(); }
+  });
+
+  document.getElementById('edit').addEventListener('click', function(){
+    result.hidden = true; form.hidden = false; document.getElementById('message').focus();
+  });
+
+  // ---- hover tilt on product illustrations ----
+  var finePointer = !!(window.matchMedia && matchMedia('(hover: hover) and (pointer: fine)').matches);
+  var reduceMotion = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  if (finePointer && !reduceMotion) {
+    Array.prototype.forEach.call(grid.querySelectorAll('.art'), function(art){
+      art.addEventListener('pointermove', function(e){
+        var r = art.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+        art.style.setProperty('--rx', (-y * 8).toFixed(2) + 'deg');
+        art.style.setProperty('--ry', (x * 10).toFixed(2) + 'deg');
+        art.style.setProperty('--mx', ((x + 0.5) * 100).toFixed(1) + '%');
+        art.style.setProperty('--my', ((y + 0.5) * 100).toFixed(1) + '%');
+        var fg = art.querySelector('#foil-g');
+        if (fg) fg.setAttribute('gradientTransform', 'translate(' + (x * 160).toFixed(1) + ' ' + (y * 70).toFixed(1) + ')');
+      });
+      art.addEventListener('pointerleave', function(){
+        art.style.setProperty('--rx', '0deg'); art.style.setProperty('--ry', '0deg');
+      });
+    });
+  }
+
+  // ---- sample colouring book with page flip ----
+  var INK = '#0B0C10', GOLD = '#C9A24B', GOLD2 = '#A8873A', GOLD3 = '#7A5C14', CON = '#9EA3AE', MUTED = '#4B4F58', IVORY = '#F5F1E8';
+  var CLOUD = 'M20 60 C5 60 5 40 20 38 C22 22 45 18 52 30 C58 14 85 16 86 34 C102 32 108 52 94 60 Z';
+  var PLANE_PARTS = '<path d="M160 52 L140 22 L165 22 L195 50 Z"/><path d="M60 58 L36 14 L70 14 L100 52 Z"/><path d="M40 80 C40 58 70 50 110 50 L220 50 C255 50 285 66 290 80 C285 94 255 106 220 106 L110 106 C70 106 40 100 40 80 Z"/><path d="M58 94 L272 94" fill="none"/><circle cx="130" cy="72" r="9"/><circle cx="162" cy="72" r="9"/><circle cx="194" cy="72" r="9"/><path d="M244 60 C262 62 276 70 281 78 L246 78 Z"/><path d="M150 92 L110 150 L150 150 L202 98 Z"/>';
+  var COLOURED_PLANE = '<path d="M160 52 L140 22 L165 22 L195 50 Z" fill="' + GOLD2 + '"/><path d="M60 58 L36 14 L70 14 L100 52 Z" fill="' + GOLD + '"/><path d="M40 80 C40 58 70 50 110 50 L220 50 C255 50 285 66 290 80 C285 94 255 106 220 106 L110 106 C70 106 40 100 40 80 Z" fill="#FFFFFF"/><path d="M58 94 L272 94" fill="none" stroke="' + GOLD + '" stroke-width="6"/><circle cx="130" cy="72" r="9" fill="' + CON + '"/><circle cx="162" cy="72" r="9" fill="' + CON + '"/><circle cx="194" cy="72" r="9" fill="' + CON + '"/><path d="M244 60 C262 62 276 70 281 78 L246 78 Z" fill="' + CON + '"/><path d="M150 92 L110 150 L150 150 L202 98 Z" fill="' + GOLD2 + '"/>';
+  var BALLOON = '<path d="M30 0 C10 0 0 16 0 32 C0 52 22 64 26 74 L34 74 C38 64 60 52 60 32 C60 16 50 0 30 0 Z"/><path d="M30 0 C22 18 22 50 28 74" fill="none"/><path d="M30 0 C38 18 38 50 32 74" fill="none"/><line x1="26" y1="74" x2="24" y2="86"/><line x1="34" y1="74" x2="36" y2="86"/><rect x="22" y="86" width="16" height="12" rx="2"/>';
+  var OUT = 'fill="#FFFFFF" stroke="' + INK + '" stroke-width="1.6"';
+  function pg(label, bg, inner){ return '<svg viewBox="0 0 528 816" role="img" aria-label="' + label + '"><rect width="528" height="816" fill="' + bg + '"/>' + inner + '</svg>'; }
+  function nm(upper){ return upper ? '<tspan data-name-upper="1">AMIRA</tspan>' : '<tspan data-name="1">Amira</tspan>'; }
+  function foot(n){ return '<text x="48" y="782" class="t-mono" font-weight="700" font-size="12" fill="' + MUTED + '">' + n + '</text><text x="480" y="782" text-anchor="end" class="t-body" font-size="12" fill="' + MUTED + '">Jetset Prints 53 · @jetsetprints53.ca</text>'; }
+
+  var COVER_ART =
+    '<path d="M14 262 C 70 250, 110 210, 150 180" fill="none" stroke="' + CON + '" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>' +
+    '<g stroke="' + INK + '" stroke-width="3" stroke-linecap="round"><line x1="380" y1="6" x2="380" y2="14"/><line x1="380" y1="86" x2="380" y2="94"/><line x1="336" y1="50" x2="344" y2="50"/><line x1="416" y1="50" x2="424" y2="50"/><line x1="349" y1="19" x2="355" y2="25"/><line x1="405" y1="75" x2="411" y2="81"/><line x1="411" y1="19" x2="405" y2="25"/><line x1="355" y1="75" x2="349" y2="81"/></g>' +
+    '<circle cx="380" cy="50" r="28" fill="' + GOLD + '" stroke="' + INK + '" stroke-width="3"/><circle cx="371" cy="45" r="2.6" fill="' + INK + '"/><circle cx="389" cy="45" r="2.6" fill="' + INK + '"/><path d="M369 56 Q380 66 391 56" fill="none" stroke="' + INK + '" stroke-width="3" stroke-linecap="round"/>' +
+    '<g fill="#FFFFFF" stroke="' + INK + '" stroke-linejoin="round"><path transform="translate(24 30) scale(1.1)" stroke-width="2.6" d="' + CLOUD + '"/><path transform="translate(296 196) scale(0.9)" stroke-width="3.2" d="' + CLOUD + '"/><path transform="translate(150 236) scale(0.62)" stroke-width="4.4" d="' + CLOUD + '"/></g>' +
+    '<g transform="translate(40 104)" fill="' + GOLD + '" stroke="' + INK + '" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round">' + BALLOON + '</g>' +
+    '<g transform="translate(140 100) rotate(-10) scale(0.85)" stroke="' + INK + '" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">' + COLOURED_PLANE + '</g>';
+
+  var WIN = [[26,414],[50,414],[26,438],[50,438],[26,462],[50,462],[90,374],[112,374],[90,398],[112,398],[90,422],[112,422],[90,446],[112,446],[146,432],[174,432],[212,404],[232,404],[212,428],[232,428],[212,452],[232,452],[320,424],[342,424],[320,448],[342,448],[378,394],[400,394],[378,418],[400,418],[378,442],[400,442]];
+  var SCENE = '<g fill="#FFFFFF" stroke="' + INK + '" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">' +
+    '<line x1="104" y1="64" x2="118" y2="64"/><line x1="64" y1="24" x2="64" y2="10"/><line x1="24" y1="64" x2="10" y2="64"/><line x1="64" y1="104" x2="64" y2="118"/><line x1="92.3" y1="35.7" x2="102.2" y2="25.8"/><line x1="35.7" y1="35.7" x2="25.8" y2="25.8"/><line x1="35.7" y1="92.3" x2="25.8" y2="102.2"/><line x1="92.3" y1="92.3" x2="102.2" y2="102.2"/>' +
+    '<circle cx="64" cy="64" r="30"/><path d="M52 72 Q64 82 76 72" fill="none"/>' +
+    '<path transform="translate(292 20) scale(1.15)" stroke-width="3" d="' + CLOUD + '"/><path transform="translate(10 150) scale(0.8)" stroke-width="4.4" d="' + CLOUD + '"/><path transform="translate(320 190) scale(0.85)" stroke-width="4.1" d="' + CLOUD + '"/>' +
+    '<g fill="none"><path d="M170 50 Q177 43 184 50 Q191 43 198 50"/><path d="M205 68 Q212 61 219 68 Q226 61 233 68"/><path d="M150 84 Q157 77 164 84 Q171 77 178 84"/></g>' +
+    '<g transform="translate(70 110) rotate(-6)">' + PLANE_PARTS + '</g>' +
+    '<g transform="translate(356 260)" stroke-width="3">' + BALLOON + '</g>' +
+    '<rect x="16" y="400" width="58" height="100"/><rect x="80" y="360" width="50" height="140"/><rect x="136" y="420" width="60" height="80"/><rect x="202" y="390" width="48" height="110"/><rect x="310" y="410" width="52" height="90"/><rect x="368" y="380" width="50" height="120"/>' +
+    '<path d="M270 500 L276 380 L286 380 L292 500 Z"/><line x1="281" y1="296" x2="281" y2="342"/><rect x="277" y="352" width="8" height="14"/><ellipse cx="281" cy="348" rx="12" ry="6"/><ellipse cx="281" cy="372" rx="26" ry="10"/><rect x="158" y="470" width="16" height="30" rx="2"/>' +
+    '<g stroke-width="2.6">' + WIN.map(function(p){ return '<rect x="' + p[0] + '" y="' + p[1] + '" width="12" height="12"/>'; }).join('') + '</g>' +
+    '<line x1="0" y1="500" x2="432" y2="500"/>' +
+    '<path d="M0 524 Q18 516 36 524 T72 524 T108 524 T144 524 T180 524 T216 524 T252 524 T288 524 T324 524 T360 524 T396 524 T432 524" fill="none"/>' +
+    '<path d="M18 548 Q36 540 54 548 T90 548 T126 548 T162 548 T198 548 T234 548 T270 548 T306 548 T342 548 T378 548 T414 548" fill="none"/>' +
+    '</g><circle cx="54" cy="58" r="3" fill="' + INK + '"/><circle cx="74" cy="58" r="3" fill="' + INK + '"/>';
+
+  var WINDOW = '<g fill="#FFFFFF" stroke="' + INK + '" stroke-linecap="round" stroke-linejoin="round"><rect x="56" y="4" width="320" height="384" rx="130" stroke-width="4"/><rect x="82" y="30" width="268" height="332" rx="108" stroke-width="3"/><rect x="196" y="38" width="40" height="10" rx="5" stroke-width="3"/><path transform="translate(250 290) scale(0.7)" stroke-width="4.3" d="' + CLOUD + '"/><path d="M110 300 Q118 292 126 300 Q134 292 142 300" fill="none" stroke-width="3"/></g>';
+  var LTAG = 'M20 2 H112 Q118 2 118 8 V62 Q118 68 112 68 H20 L2 35 Z';
+  function star(cx, cy){ return '<path d="M' + cx + ' ' + (cy - 8) + ' L' + (cx + 2.5) + ' ' + (cy - 2.5) + ' L' + (cx + 8) + ' ' + cy + ' L' + (cx + 2.5) + ' ' + (cy + 2.5) + ' L' + cx + ' ' + (cy + 8) + ' L' + (cx - 2.5) + ' ' + (cy + 2.5) + ' L' + (cx - 8) + ' ' + cy + ' L' + (cx - 2.5) + ' ' + (cy - 2.5) + ' Z" stroke-width="2.2"/>'; }
+  var TAGS = '<g fill="#FFFFFF" stroke="' + INK + '" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">' +
+    '<g transform="translate(12 14)"><path d="' + LTAG + '"/><circle cx="18" cy="35" r="5"/>' + star(50, 24) + star(80, 46) + star(100, 22) + '</g>' +
+    '<g transform="translate(156 14)"><path d="' + LTAG + '"/><circle cx="18" cy="35" r="5"/><g stroke-width="2.4"><line x1="44" y1="10" x2="44" y2="60"/><line x1="62" y1="10" x2="62" y2="60"/><line x1="80" y1="10" x2="80" y2="60"/><line x1="98" y1="10" x2="98" y2="60"/></g></g>' +
+    '<g transform="translate(300 14)"><path d="' + LTAG + '"/><circle cx="18" cy="35" r="5"/><g stroke-width="2.4"><circle cx="46" cy="22" r="5"/><circle cx="70" cy="40" r="5"/><circle cx="94" cy="22" r="5"/><circle cx="98" cy="52" r="5"/><circle cx="52" cy="52" r="5"/></g></g></g>';
+  function crayon(x, c, rot){ return '<g transform="translate(' + x + ' 0) rotate(' + rot + ')"><rect x="-11" y="-60" width="22" height="100" rx="3" fill="' + c + '"/><path d="M-11 -60 L0 -88 L11 -60 Z" fill="' + c + '"/><rect x="-11" y="-30" width="22" height="10" fill="#FFFFFF"/></g>'; }
+
+  function pageCover(){
+    return pg('Front cover of the personalized colouring book', IVORY,
+      '<text x="44" y="64" class="t-mono" font-weight="700" font-size="12" letter-spacing="3" fill="' + GOLD3 + '">BOARDING PASS · FLT 53</text>' + plane(454, 40, 0.25) +
+      '<text x="44" y="128" class="t-mono" font-weight="700" font-size="13" letter-spacing="4" fill="' + GOLD3 + '">CAPTAIN</text>' +
+      '<text x="44" y="194" class="t-disp cover-name" font-size="60" fill="' + INK + '">' + nm(true) + '’S</text>' +
+      '<text x="44" y="236" class="t-disp" font-size="28" fill="' + INK + '">SKY-HIGH</text><text x="44" y="268" class="t-disp" font-size="28" fill="' + INK + '">COLOURING BOOK</text>' +
+      '<g transform="translate(44 300)">' + COVER_ART + '</g>' +
+      '<rect x="44" y="612" width="440" height="116" rx="14" fill="#FFFFFF" stroke="' + INK + '" stroke-width="2"/><line x1="388" y1="612" x2="388" y2="728" stroke="' + INK + '" stroke-width="2" stroke-dasharray="5 5"/>' +
+      '<g class="t-mono" font-size="12" letter-spacing="2" fill="' + MUTED + '"><text x="60" y="640">PASSENGER</text><text x="232" y="640">AGE</text><text x="60" y="688">FROM</text><text x="232" y="688">TO</text><text x="436" y="646" text-anchor="middle">GATE</text><text x="436" y="712" text-anchor="middle" letter-spacing="1">SEAT 1A</text></g>' +
+      '<g class="t-mono" font-weight="700" font-size="16" fill="' + INK + '"><text x="60" y="660">' + nm(true) + '</text><text x="232" y="660">6</text><text x="60" y="708">NORTH YORK</text><text x="232" y="708">IMAGINATION</text></g>' +
+      '<text x="436" y="686" text-anchor="middle" class="t-disp" font-size="34" fill="' + GOLD3 + '">53</text>' +
+      '<text x="44" y="778" class="t-body" font-size="12" fill="' + MUTED + '">16 pages to colour</text><text x="484" y="778" text-anchor="end" class="t-body" font-size="12" fill="' + MUTED + '">Made by Jetset Prints 53</text>');
+  }
+  function pageBelongs(){
+    return pg('Inside cover: this book belongs to', '#FFFFFF',
+      '<text x="56" y="150" class="t-mono" font-weight="700" font-size="13" letter-spacing="4" fill="' + GOLD3 + '">THIS BOOK BELONGS TO</text>' +
+      '<text x="56" y="214" class="t-disp belongs-name" font-size="44" fill="' + INK + '">' + nm(false) + '</text>' +
+      '<line x1="56" y1="238" x2="472" y2="238" stroke="' + INK + '" stroke-width="3"/>' +
+      '<text x="56" y="288" class="t-body" font-weight="600" font-size="18" fill="' + INK + '">Made with love for ' + nm(false) + '’s</text>' +
+      '<text x="56" y="314" class="t-body" font-weight="600" font-size="18" fill="' + INK + '">6th birthday.</text>' +
+      '<g fill="#FFFFFF" stroke="' + INK + '" stroke-linejoin="round" stroke-linecap="round"><g transform="translate(222 400) scale(1.4)" stroke-width="2.4">' + BALLOON + '</g><path transform="translate(96 560) scale(0.9)" stroke-width="3.6" d="' + CLOUD + '"/><path transform="translate(316 600) scale(0.75)" stroke-width="4.2" d="' + CLOUD + '"/></g>' +
+      '<text x="264" y="742" text-anchor="middle" class="t-body" font-size="12" fill="' + MUTED + '">Colour this page too!</text>');
+  }
+  function pageP1(){
+    return pg('Page 1 to colour: a plane over the Toronto skyline', '#FFFFFF',
+      '<text x="264" y="88" text-anchor="middle" class="t-disp p1-line" font-size="26" ' + OUT + '>Captain ' + nm(false) + ',</text>' +
+      '<text x="264" y="124" text-anchor="middle" class="t-disp" font-size="26" ' + OUT + '>ready for takeoff!</text>' +
+      '<g transform="translate(48 152)">' + SCENE + '</g>' + foot('1'));
+  }
+  function pageP2(){
+    return pg('Page 2 to colour: draw yourself in the plane window', '#FFFFFF',
+      '<text x="264" y="84" text-anchor="middle" class="t-disp" font-size="28" ' + OUT + '>Who’s in the</text>' +
+      '<text x="264" y="120" text-anchor="middle" class="t-disp" font-size="28" ' + OUT + '>window seat?</text>' +
+      '<text x="264" y="156" text-anchor="middle" class="t-body p2-sub" font-weight="600" font-size="16" fill="' + INK + '">Draw yourself looking out of ' + nm(false) + '’s plane.</text>' +
+      '<g transform="translate(48 176)">' + WINDOW + '</g>' +
+      '<text x="264" y="606" text-anchor="middle" class="t-body" font-weight="800" font-size="16" fill="' + INK + '">Colour the luggage tags</text>' +
+      '<g transform="translate(48 622)">' + TAGS + '</g>' + foot('2'));
+  }
+  function pageMore(){
+    return pg('More pages to colour', '#FFFFFF',
+      '<text x="264" y="300" text-anchor="middle" class="t-disp" font-size="64" fill="#FFFFFF" stroke="' + INK + '" stroke-width="2">+14</text>' +
+      '<text x="264" y="346" text-anchor="middle" class="t-disp" font-size="22" fill="' + INK + '">MORE PAGES</text>' +
+      '<text x="264" y="392" text-anchor="middle" class="t-body" font-weight="600" font-size="16" fill="' + MUTED + '">More planes, balloons and city scenes,</text>' +
+      '<text x="264" y="416" text-anchor="middle" class="t-body" font-weight="600" font-size="16" fill="' + MUTED + '">each one with ' + nm(false) + '’s name.</text>' +
+      '<g transform="translate(264 560)" stroke="' + INK + '" stroke-width="2.5" stroke-linejoin="round">' + crayon(-70, GOLD, -20) + crayon(0, CON, 0) + crayon(70, GOLD2, 20) + '</g>');
+  }
+  function pageBack(){
+    return pg('Back cover with Jetset Prints 53 details', IVORY,
+      '<path d="M40 330 C 110 330, 140 290, 190 280" fill="none" stroke="' + CON + '" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>' +
+      '<g transform="translate(176 200) rotate(-8) scale(0.78)" stroke="' + INK + '" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">' + COLOURED_PLANE + '</g>' +
+      '<line x1="48" y1="520" x2="480" y2="520" stroke="#D8D2C4" stroke-width="2"/>' + plane(48, 552, 0.4) +
+      '<text x="108" y="580" class="t-disp" font-size="26" fill="' + INK + '">JETSET</text>' +
+      '<text x="108" y="604" class="t-mono" font-weight="700" font-size="12" letter-spacing="5" fill="' + INK + '">PRINTS</text><rect x="188" y="597" width="26" height="2" fill="' + GOLD + '"/><rect x="220" y="590" width="26" height="18" rx="4" fill="' + GOLD + '"/><text x="233" y="604" text-anchor="middle" class="t-mono" font-weight="700" font-size="12" fill="' + INK + '">53</text>' +
+      '<text x="48" y="660" class="t-body" font-size="14" fill="' + MUTED + '">Personalized colouring books, stickers and</text>' +
+      '<text x="48" y="682" class="t-body" font-size="14" fill="' + MUTED + '">party favours, printed in North York, Toronto.</text>' +
+      '<text x="48" y="730" class="t-mono" font-weight="700" font-size="13" letter-spacing="1" fill="' + INK + '">@jetsetprints53.ca · DM TO ORDER</text>' +
+      '<text x="48" y="768" class="t-body" font-size="12" fill="' + MUTED + '">Original artwork © 2026 Jetset Prints 53</text>');
+  }
+
+  var PAGES = { cover: pageCover, belongs: pageBelongs, p1: pageP1, p2: pageP2, more: pageMore, back: pageBack };
+  var LEAVES = [['cover', 'belongs'], ['p1', 'p2'], ['more', 'back']];
+  var STATUS = ['Front cover', 'Inside cover · Page 1', 'Page 2 · More pages', 'Back cover'];
+  var modal = document.getElementById('flip-modal');
+  var bookEl = document.getElementById('book');
+  var nameIn = document.getElementById('flip-name');
+  var prevBtn = document.getElementById('flip-prev'), nextBtn = document.getElementById('flip-next'), statusEl = document.getElementById('flip-status');
+  var bookState = 0, settleTimer = 0, lastTrigger = null, built = false;
+
+  function buildBook(){
+    bookEl.innerHTML = LEAVES.map(function(l, i){
+      return '<div class="leaf" data-i="' + i + '"><div class="face front">' + PAGES[l[0]]() + '</div><div class="face back">' + PAGES[l[1]]() + '</div></div>';
+    }).join('');
+    built = true;
+  }
+  function leafList(){ return bookEl.querySelectorAll('.leaf'); }
+  function layout(active){
+    var ls = leafList(), n = ls.length;
+    Array.prototype.forEach.call(ls, function(lf, i){
+      var f = i < bookState;
+      lf.classList.toggle('flipped', f);
+      lf.style.zIndex = String(i === active ? n + 2 : (f ? i + 1 : n - i));
+    });
+    bookEl.classList.toggle('at-start', bookState === 0);
+    bookEl.classList.toggle('at-end', bookState === n);
+    prevBtn.disabled = bookState === 0;
+    nextBtn.disabled = bookState === n;
+    statusEl.textContent = STATUS[bookState] || '';
+  }
+  function turn(d){
+    var n = leafList().length, ns = Math.max(0, Math.min(n, bookState + d));
+    if (ns === bookState) return;
+    var active = d > 0 ? bookState : ns;
+    bookState = ns; layout(active);
+    clearTimeout(settleTimer);
+    settleTimer = setTimeout(function(){ layout(-1); }, 850);
+  }
+  function setName(v){
+    var n = String(v || '').replace(/\s+/g, ' ').trim().slice(0, 14) || 'Amira';
+    bookEl.querySelectorAll('[data-name]').forEach(function(el){ el.textContent = n; });
+    bookEl.querySelectorAll('[data-name-upper]').forEach(function(el){ el.textContent = n.toUpperCase(); });
+    var L = n.length;
+    function fit(selector, max, width, extra, k){
+      var s = Math.min(max, Math.floor(width / ((L + extra) * k)));
+      bookEl.querySelectorAll(selector).forEach(function(el){ el.setAttribute('font-size', String(s)); });
+    }
+    fit('.cover-name', 60, 440, 2, 0.86);
+    fit('.belongs-name', 44, 416, 0, 0.82);
+    fit('.p1-line', 26, 432, 9, 0.85);
+    fit('.p2-sub', 16, 432, 38, 0.52);
+    return n;
+  }
+  function openFlip(trigger){
+    if (!built) buildBook();
+    lastTrigger = trigger || null;
+    bookState = 0; layout(-1); setName(nameIn.value);
+    modal.hidden = false; document.body.style.overflow = 'hidden';
+    setTimeout(function(){ try { nameIn.focus({ preventScroll: true }); } catch(_) { nameIn.focus(); } }, 30);
+  }
+  function closeFlip(){
+    modal.hidden = true; document.body.style.overflow = '';
+    if (lastTrigger) { try { lastTrigger.focus({ preventScroll: true }); } catch(_) {} }
+  }
+  grid.addEventListener('click', function(e){ var b = e.target.closest('.flip-open'); if (b) openFlip(b); });
+  prevBtn.addEventListener('click', function(){ turn(-1); });
+  nextBtn.addEventListener('click', function(){ turn(1); });
+  bookEl.addEventListener('click', function(e){ var lf = e.target.closest('.leaf'); if (!lf) return; turn(lf.classList.contains('flipped') ? -1 : 1); });
+  nameIn.addEventListener('input', function(){ setName(nameIn.value); });
+  document.getElementById('flip-close').addEventListener('click', closeFlip);
+  modal.addEventListener('click', function(e){ if (e.target.hasAttribute && e.target.hasAttribute('data-close')) closeFlip(); });
+  modal.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') { e.preventDefault(); closeFlip(); return; }
+    if (e.key === 'Tab') {
+      var f = modal.querySelectorAll('button:not([disabled]), input');
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      return;
+    }
+    if (e.target === nameIn) return;
+    if (e.key === 'ArrowRight') { e.preventDefault(); turn(1); }
+    else if (e.key === 'ArrowLeft') { e.preventDefault(); turn(-1); }
+  });
+  document.getElementById('flip-order').addEventListener('click', function(){
+    var n = setName(nameIn.value);
+    closeFlip();
+    sel.value = 'colouring'; clearErr('product');
+    var msg = document.getElementById('message');
+    if (!msg.value.trim()) msg.value = 'Personalized colouring book for ' + n + '. Number of books and party date: ';
+    document.getElementById('contact').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+  });
+
+  // ---- live price builder (edit PRICING to change any price) ----
+  var PRICING = {
+    minOrder: 15, rush: 10, firstOrder: 0.15,
+    stickers: { tiers: [[10, 1.50], [25, 1.35], [50, 1.20], [100, 0.95]], max: 200, size: { 2: 0.75, 3: 1, 4: 1.4 }, perSheet: { 2: 12, 3: 6, 4: 4 }, grid: { 2: [3, 4], 3: [2, 3], 4: [2, 2] }, design: 30 },
+    labels: { tiers: [[1, 12], [5, 11], [10, 10]], maxSheets: 24, design: 35,
+      sizes: {
+        r15: { name: '1.5 in round', n: 24, cols: 4, rows: 6, kind: 'circle', w: 56, h: 56 },
+        r2: { name: '2 in round', n: 12, cols: 3, rows: 4, kind: 'circle', w: 74, h: 74 },
+        r3: { name: '3 in round', n: 6, cols: 2, rows: 3, kind: 'circle', w: 106, h: 106 },
+        x21: { name: '2 × 1 in rectangle', n: 27, cols: 3, rows: 9, kind: 'rect', w: 100, h: 50 },
+        x32: { name: '3 × 2 in rectangle', n: 8, cols: 2, rows: 4, kind: 'rect', w: 124, h: 82 }
+      } },
+    favours: {
+      book: { label: 'Colouring favour book', note: '16 pages, name on the cover and inside', each: 5, min: 10, unit: 'book', product: 'colouring', eta: 'About 1 week', rush: false },
+      pack: { label: 'Favour pack', note: 'Book, name sticker sheet and crayons', each: 9, min: 10, unit: 'pack', product: 'colouring', eta: 'About 1 week', rush: false },
+      gift: { label: 'Gift colouring book', note: '24 pages, folded and stapled', each: 15, min: 1, unit: 'book', product: 'colouring', eta: 'About 1 week', rush: false },
+      names: { label: 'Name sticker sheet', note: '', each: 4, single: 8, bulkFrom: 10, min: 1, unit: 'sheet', product: 'namestickers', eta: '1–3 business days', rush: true }
+    }
+  };
+  var STICKER_SHAPES = { circle: 'circle', square: 'rounded square', custom: 'custom die-cut' };
+  var FINISH_NAMES = { matte: 'matte paper', gloss: 'gloss paper', vinyl: 'vinyl' };
+  var bTab = 'stickers';
+  function byId(id){ return document.getElementById(id); }
+  function radioVal(name){ var r = document.querySelector('input[name="' + name + '"]:checked'); return r ? r.value : ''; }
+  function round2(v){ return Math.round(v * 100) / 100; }
+  function money(v){ return '$' + round2(v).toFixed(2); }
+  function tierOf(tiers, q){ var p = tiers[0][1]; tiers.forEach(function(t){ if (q >= t[0]) p = t[1]; }); return p; }
+  function intOf(id, min, max){ var v = parseInt(byId(id).value, 10); if (isNaN(v)) v = min; return Math.max(min, Math.min(max, v)); }
+  function plural(n, word){ return n + ' ' + word + (n === 1 ? '' : 's'); }
+
+  function miniSheet(x, y, cols, rows, kind, cap1, cap2){
+    var w = 85, h = 110, pad = 6, cw = (w - pad * 2) / cols, ch = (h - pad * 2) / rows, r = Math.min(cw, ch) * 0.4;
+    var out = '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" rx="3" class="f-white s-edge"/>';
+    for (var j = 0; j < rows; j++) for (var i = 0; i < cols; i++) {
+      var cx = x + pad + cw * (i + 0.5), cy = y + pad + ch * (j + 0.5);
+      out += kind === 'circle'
+        ? '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + r.toFixed(1) + '" class="f-gold2"/>'
+        : '<rect x="' + (cx - cw * 0.4).toFixed(1) + '" y="' + (cy - ch * 0.38).toFixed(1) + '" width="' + (cw * 0.8).toFixed(1) + '" height="' + (ch * 0.76).toFixed(1) + '" rx="' + Math.min(4, ch * 0.2).toFixed(1) + '" class="f-gold2"/>';
+    }
+    out += '<text x="' + (x + w / 2) + '" y="' + (y + h + 18) + '" text-anchor="middle" class="t-mono f-muted" font-size="11">' + cap1 + '</text>';
+    if (cap2) out += '<text x="' + (x + w / 2) + '" y="' + (y + h + 34) + '" text-anchor="middle" class="t-mono f-muted" font-size="11">' + cap2 + '</text>';
+    return out;
+  }
+
+  function stickerSVG(size, shape, finish, text, sheets){
+    var r = { 2: 54, 3: 76, 4: 96 }[size] || 76, cx = 130, cy = 124, shapeEl;
+    if (shape === 'circle') {
+      shapeEl = function(extra, attrs){ return '<circle cx="' + cx + '" cy="' + cy + '" r="' + (r + extra) + '" ' + attrs + '/>'; };
+    } else if (shape === 'square') {
+      shapeEl = function(extra, attrs){ var s = r * 1.8 + extra * 2; return '<rect x="' + (cx - s / 2) + '" y="' + (cy - s / 2) + '" width="' + s + '" height="' + s + '" rx="' + (r * 0.36 + extra) + '" ' + attrs + '/>'; };
+    } else {
+      var k = (2 * r) / 94, tr = 'translate(' + (cx - 56 * k).toFixed(1) + ' ' + (cy - 38 * k).toFixed(1) + ') scale(' + k.toFixed(3) + ')';
+      shapeEl = function(extra, attrs){ return '<path transform="' + tr + '" d="' + CLOUD + '" ' + (extra ? 'stroke-width="' + (extra * 2 / k).toFixed(1) + '" stroke-linejoin="round" ' : '') + attrs + '/>'; };
+    }
+    var len = Math.max(text.length, 3);
+    var fs = Math.min(shape === 'custom' ? r * 0.3 : r * 0.36, (1.6 * r) / (len * 0.66));
+    var shine = finish === 'gloss' ? '<g clip-path="url(#st-clip)"><path d="M' + (cx - r * 1.5) + ' ' + (cy + r * 0.3) + ' L' + (cx - r * 0.3) + ' ' + (cy - r * 1.5) + ' L' + (cx + r * 0.05) + ' ' + (cy - r * 1.5) + ' L' + (cx - r * 1.15) + ' ' + (cy + r * 0.3) + ' Z" fill="#FFFFFF" opacity=".42"/></g>' : '';
+    var g = PRICING.stickers.grid[size];
+    return '<svg viewBox="0 0 400 260" role="img" aria-label="Preview of a ' + size + ' inch ' + STICKER_SHAPES[shape] + ' sticker with a ' + finish + ' finish">' +
+      '<defs><clipPath id="st-clip">' + shapeEl(0, '') + '</clipPath></defs>' +
+      '<g transform="translate(4 6)" opacity=".14">' + shapeEl(9, 'fill="#0B0C10" stroke="#0B0C10"') + '</g>' +
+      shapeEl(9, 'fill="#FFFFFF" stroke="#FFFFFF"') + shapeEl(0, 'fill="#C9A24B"') +
+      '<text x="' + cx + '" y="' + (cy + fs * 0.36).toFixed(1) + '" text-anchor="middle" class="t-disp" font-size="' + fs.toFixed(1) + '" fill="#0B0C10">' + esc(text) + '</text>' + shine +
+      '<text x="' + cx + '" y="248" text-anchor="middle" class="t-mono f-muted" font-size="11">' + size + ' IN · ' + finish.toUpperCase() + '</text>' +
+      miniSheet(292, 46, g[0], g[1], shape === 'square' ? 'rect' : 'circle', PRICING.stickers.perSheet[size] + ' per sheet', '× ' + plural(sheets, 'sheet')) +
+      '</svg>';
+  }
+
+  function labelSVG(L, finish, text, sheets){
+    var lx = 130, ly = 142, len = Math.max(text.length, 3), paper = finish === 'vinyl' ? '#F5F1E8' : '#FFFFFF', lab, fs, shine = '';
+    if (L.kind === 'circle') {
+      lab = '<circle cx="' + lx + '" cy="' + ly + '" r="' + (L.w / 2) + '" fill="' + paper + '" stroke="#CFC8B8" stroke-width="1"/>';
+      fs = Math.min(L.w * 0.2, (L.w * 0.78) / (len * 0.66));
+      if (finish === 'gloss') shine = '<path d="M' + (lx - L.w * 0.34).toFixed(1) + ' ' + (ly - L.w * 0.06).toFixed(1) + ' A ' + (L.w * 0.36).toFixed(1) + ' ' + (L.w * 0.36).toFixed(1) + ' 0 0 1 ' + (lx + L.w * 0.04).toFixed(1) + ' ' + (ly - L.w * 0.36).toFixed(1) + '" fill="none" stroke="#D8D2C4" stroke-width="3" stroke-linecap="round"/>';
+    } else {
+      lab = '<rect x="' + (lx - L.w / 2) + '" y="' + (ly - L.h / 2) + '" width="' + L.w + '" height="' + L.h + '" rx="6" fill="' + paper + '" stroke="#CFC8B8" stroke-width="1"/>';
+      fs = Math.min(L.h * 0.3, (L.w * 0.84) / (len * 0.66));
+      if (finish === 'gloss') shine = '<rect x="' + (lx - L.w / 2 + 6) + '" y="' + (ly - L.h / 2 + 5) + '" width="' + (L.w * 0.4).toFixed(1) + '" height="3" rx="1.5" fill="#D8D2C4"/>';
+    }
+    return '<svg viewBox="0 0 400 260" role="img" aria-label="Preview of a ' + L.name + ' label on a jar">' +
+      '<rect x="78" y="34" width="104" height="20" rx="4" fill="#0B0C10"/><rect x="58" y="52" width="144" height="178" rx="26" fill="#C9A24B"/><rect x="68" y="64" width="10" height="150" rx="5" fill="#FFFFFF" opacity=".3"/>' +
+      lab + shine +
+      '<text x="' + lx + '" y="' + (ly + fs * 0.36).toFixed(1) + '" text-anchor="middle" class="t-disp" font-size="' + fs.toFixed(1) + '" fill="#0B0C10">' + esc(text) + '</text>' +
+      '<text x="130" y="250" text-anchor="middle" class="t-mono f-muted" font-size="11">' + esc(L.name.toUpperCase()) + '</text>' +
+      miniSheet(292, 46, L.cols, L.rows, L.kind, L.n + ' per sheet', '× ' + plural(sheets, 'sheet')) +
+      '</svg>';
+  }
+
+  function favourSVG(item, name){
+    if (item === 'names') {
+      var out = '<rect x="120" y="18" width="160" height="210" rx="6" class="f-white s-edge"/>';
+      var fsz = Math.min(11, (66 * 0.85) / (Math.max(name.length, 3) * 0.78));
+      for (var j = 0; j < 5; j++) for (var i = 0; i < 2; i++) {
+        var x = 132 + i * 74, y = 30 + j * 38, dark = (i + j) % 2 === 1;
+        out += '<rect x="' + x + '" y="' + y + '" width="66" height="28" rx="14" fill="' + (dark ? '#0B0C10' : '#C9A24B') + '"/>' +
+          '<text x="' + (x + 33) + '" y="' + (y + 14 + fsz * 0.36).toFixed(1) + '" text-anchor="middle" class="t-disp" font-size="' + fsz.toFixed(1) + '" fill="' + (dark ? '#C9A24B' : '#0B0C10') + '">' + esc(name.toUpperCase()) + '</text>';
+      }
+      return '<svg viewBox="0 0 400 260" role="img" aria-label="Preview of a name sticker sheet">' + out + '<text x="200" y="248" text-anchor="middle" class="t-mono f-muted" font-size="11">NAME STICKER SHEET</text></svg>';
+    }
+    var bx = item === 'pack' ? 104 : 124;
+    var cover = pageCover().replace('<svg ', '<svg x="' + bx + '" y="14" width="150" height="232" ');
+    var extra = '';
+    if (item === 'pack') {
+      extra = '<rect x="284" y="40" width="84" height="28" rx="14" fill="#C9A24B"/><text x="326" y="58" text-anchor="middle" class="t-disp" font-size="' + Math.min(11, 64 / (Math.max(name.length, 3) * 0.78)).toFixed(1) + '" fill="#0B0C10">' + esc(name.toUpperCase()) + '</text>' +
+        '<rect x="284" y="76" width="84" height="28" rx="14" fill="#0B0C10"/><text x="326" y="94" text-anchor="middle" class="t-disp" font-size="' + Math.min(11, 64 / (Math.max(name.length, 3) * 0.78)).toFixed(1) + '" fill="#C9A24B">' + esc(name.toUpperCase()) + '</text>' +
+        '<g transform="translate(296 200) scale(.55)" stroke="#0B0C10" stroke-width="2.5" stroke-linejoin="round">' + crayon(0, GOLD, -10) + crayon(40, CON, 4) + crayon(80, GOLD2, 14) + '</g>';
+    } else {
+      extra = '<rect x="290" y="40" width="84" height="26" rx="13" fill="#0B0C10"/><text x="332" y="57" text-anchor="middle" class="t-mono" font-weight="700" font-size="11" fill="#C9A24B">' + (item === 'gift' ? '24 PAGES' : '16 PAGES') + '</text>';
+    }
+    return '<svg viewBox="0 0 400 260" role="img" aria-label="Preview of the personalized colouring book cover">' +
+      '<rect x="' + (bx + 4) + '" y="20" width="150" height="232" fill="#0B0C10" opacity=".14"/>' + cover + extra + '</svg>';
+  }
+
+  function computeQuote(){
+    var lines = [], q = 0, unit = 'item', note = '', eta = '1–3 business days', quote = false, product = '', qtyText = '', rushOK = true, design = false, svg = '', extraMsg = '';
+    if (bTab === 'stickers') {
+      var P = PRICING.stickers, size = Number(radioVal('st-size')) || 3, shape = radioVal('st-shape') || 'circle', finish = radioVal('st-finish') || 'gloss';
+      q = intOf('st-qty-n', 10, 100000);
+      var per = P.perSheet[size], sheets = Math.ceil(q / per);
+      if (q > P.max) {
+        quote = true; note = 'For more than ' + P.max + ' stickers we print through a trade partner. Send your request for a custom quote.';
+      } else {
+        var each = round2(tierOf(P.tiers, q) * P.size[size]);
+        lines.push([q + ' × ' + size + ' in ' + STICKER_SHAPES[shape] + ' stickers', money(each) + ' each · ' + finish, round2(each * q)]);
+        var spare = sheets * per - q;
+        note = 'Prints on ' + plural(sheets, 'sheet') + (spare ? ', with room for ' + spare + ' more on the last one.' : ', with no space wasted.');
+      }
+      design = byId('st-design').checked;
+      if (design && !quote) lines.push(['Sticker design', 'We create the artwork for you', P.design]);
+      product = 'stickers'; unit = 'sticker';
+      qtyText = q + ' stickers, ' + size + ' in ' + STICKER_SHAPES[shape] + ', ' + finish;
+      svg = stickerSVG(size, shape, finish, byId('st-text').value.trim() || 'Your brand', sheets);
+    } else if (bTab === 'labels') {
+      var PL = PRICING.labels, L = PL.sizes[byId('lb-size').value] || PL.sizes.r2, lf = radioVal('lb-finish') || 'matte';
+      q = intOf('lb-qty-n', 1, 100000);
+      var v = Math.min(intOf('lb-versions', 1, 12), q);
+      var spv = Math.ceil(Math.ceil(q / v) / L.n), ls = v * spv;
+      if (ls > PL.maxSheets) {
+        quote = true; note = 'That needs more than ' + PL.maxSheets + ' sheets. Send your request and we will quote the larger run.';
+      } else {
+        var pps = tierOf(PL.tiers, ls);
+        lines.push([plural(ls, 'label sheet'), L.n + ' × ' + L.name + ' per sheet · ' + FINISH_NAMES[lf] + ' · ' + money(pps) + ' a sheet', ls * pps]);
+        note = 'Holds up to ' + (ls * L.n) + ' labels: ' + plural(spv, 'sheet') + ' for each of your ' + plural(v, 'version') + '.';
+      }
+      design = byId('lb-design').checked;
+      if (design && !quote) lines.push(['Label design', 'A layout for every version', PL.design]);
+      product = 'labels'; unit = 'label';
+      qtyText = q + ' labels, ' + L.name + ', ' + plural(v, 'version') + ', ' + FINISH_NAMES[lf];
+      svg = labelSVG(L, lf, byId('lb-text').value.trim() || 'Wildflower', ls);
+    } else {
+      var item = radioVal('fv-item') || 'book', F = PRICING.favours[item];
+      var kid = byId('fv-name').value.replace(/\s+/g, ' ').trim().slice(0, 14) || 'Amira';
+      q = intOf('fv-qty-n', 1, 100000);
+      if (q < F.min) { note = 'These start at ' + F.min + ', so the estimate uses ' + F.min + '. '; q = F.min; }
+      var fe = (F.single && q < F.bulkFrom) ? F.single : F.each;
+      lines.push([q + ' × ' + F.label, (F.note ? F.note + ' · ' : '') + money(fe) + ' each', fe * q]);
+      if (!F.rush) note += 'Order about a week before your party.';
+      else if (F.single && q < F.bulkFrom) note += 'Order ' + F.bulkFrom + ' or more sheets for ' + money(F.each) + ' each.';
+      rushOK = F.rush; eta = F.eta; product = F.product; unit = F.unit;
+      qtyText = q + ' × ' + F.label.toLowerCase() + ' for ' + kid;
+      extraMsg = ' Name: ' + kid + '.';
+      svg = favourSVG(item, kid);
+    }
+    var rushBox = byId('b-rush');
+    rushBox.disabled = !rushOK; if (!rushOK) rushBox.checked = false;
+    var sub = 0; lines.forEach(function(l){ sub += l[2]; });
+    if (!quote && sub < PRICING.minOrder) { lines.push(['Minimum order', 'Orders start at ' + money(PRICING.minOrder), round2(PRICING.minOrder - sub)]); sub = PRICING.minOrder; }
+    if (!quote && rushBox.checked) { lines.push(['Next-day rush', 'Ready the next business day', PRICING.rush]); sub += PRICING.rush; eta = 'next business day'; }
+    var disc = 0;
+    if (!quote && byId('b-first').checked) { disc = round2(sub * PRICING.firstOrder); lines.push(['Code FLIGHT53', '15% off your first order', -disc]); }
+    return { lines: lines, total: round2(sub - disc), quote: quote, q: q, unit: unit, eta: eta, note: note, product: product, qtyText: qtyText, design: design, svg: svg, extraMsg: extraMsg };
+  }
+
+  function renderBuilder(){
+    var r = computeQuote(), dl = byId('b-lines');
+    dl.textContent = '';
+    r.lines.forEach(function(l){
+      var row = document.createElement('div'); if (l[2] < 0) row.className = 'minus';
+      var dt = document.createElement('dt'); dt.textContent = l[0];
+      if (l[1]) { var sm = document.createElement('small'); sm.textContent = l[1]; dt.appendChild(sm); }
+      var dd = document.createElement('dd'); dd.textContent = (l[2] < 0 ? '−' : '') + money(Math.abs(l[2]));
+      row.appendChild(dt); row.appendChild(dd); dl.appendChild(row);
+    });
+    if (r.quote) {
+      var qr = document.createElement('div'), qdt = document.createElement('dt'), qdd = document.createElement('dd');
+      qdt.textContent = 'Larger run'; var qs = document.createElement('small'); qs.textContent = r.qtyText; qdt.appendChild(qs);
+      qdd.textContent = 'Quote'; qr.appendChild(qdt); qr.appendChild(qdd); dl.appendChild(qr);
+    }
+    var totalEl = byId('b-total');
+    totalEl.textContent = r.quote ? 'Custom quote' : money(r.total);
+    totalEl.style.fontSize = r.quote ? '1.4rem' : '';
+    var etaText = r.eta === 'next business day' ? 'ready the next business day' : 'ready in ' + r.eta.charAt(0).toLowerCase() + r.eta.slice(1);
+    byId('b-unit').textContent = r.quote ? '' : 'About ' + money(r.total / r.q) + ' per ' + r.unit + ' · ' + etaText;
+    byId('b-note').textContent = r.note;
+    var prev = byId('b-preview');
+    prev.innerHTML = r.svg;
+    if (bTab === 'favours') {
+      var kid = byId('fv-name').value.replace(/\s+/g, ' ').trim().slice(0, 14) || 'Amira';
+      prev.querySelectorAll('[data-name-upper]').forEach(function(el){ el.textContent = kid.toUpperCase(); });
+      prev.querySelectorAll('[data-name]').forEach(function(el){ el.textContent = kid; });
+      prev.querySelectorAll('.cover-name').forEach(function(el){ el.setAttribute('font-size', String(Math.min(60, Math.floor(440 / ((kid.length + 2) * 0.86))))); });
+    }
+  }
+
+  var bui = byId('builder-ui');
+  var PAIRS = { 'st-qty': 'st-qty-n', 'lb-qty': 'lb-qty-n', 'fv-qty': 'fv-qty-n' };
+  function selectTab(name, focus){
+    bTab = name;
+    Array.prototype.forEach.call(bui.querySelectorAll('.b-tab'), function(t){
+      var on = t.getAttribute('data-tab') === name;
+      t.setAttribute('aria-selected', String(on)); t.tabIndex = on ? 0 : -1;
+      if (on && focus) t.focus();
+    });
+    ['stickers', 'labels', 'favours'].forEach(function(p){ byId('bp-' + p).hidden = p !== name; });
+    renderBuilder();
+  }
+  bui.addEventListener('input', function(e){
+    var id = e.target.id;
+    if (PAIRS[id]) byId(PAIRS[id]).value = e.target.value;
+    else Object.keys(PAIRS).forEach(function(k){
+      if (PAIRS[k] === id) { var rg = byId(k), v = parseInt(e.target.value, 10); if (!isNaN(v)) rg.value = String(Math.max(Number(rg.min), Math.min(Number(rg.max), v))); }
+    });
+    renderBuilder();
+  });
+  bui.addEventListener('change', renderBuilder);
+  bui.addEventListener('click', function(e){
+    var pk = e.target.closest('.pick');
+    if (pk) { var t = pk.getAttribute('data-for'), pv = pk.getAttribute('data-v'); byId(t).value = pv; byId(PAIRS[t]).value = pv; renderBuilder(); return; }
+    var tb = e.target.closest('.b-tab');
+    if (tb) selectTab(tb.getAttribute('data-tab'), false);
+  });
+  bui.querySelector('.b-tabs').addEventListener('keydown', function(e){
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    var order = ['stickers', 'labels', 'favours'], i = order.indexOf(bTab);
+    e.preventDefault();
+    selectTab(order[(i + (e.key === 'ArrowRight' ? 1 : 2)) % 3], true);
+  });
+  byId('b-send').addEventListener('click', function(){
+    var r = computeQuote();
+    sel.value = r.product; clearErr('product');
+    byId('qty').value = r.qtyText;
+    if (r.design) byId('artwork').value = 'Please design it for me';
+    if (byId('b-first').checked) byId('promo').value = 'FLIGHT53';
+    var parts = r.lines.map(function(l){ return l[0] + ' ' + (l[2] < 0 ? '−' : '') + money(Math.abs(l[2])); });
+    var text = 'From the price builder: ' + (r.quote ? 'custom quote for ' + r.qtyText + '.' : parts.join('; ') + '. Estimated total ' + money(r.total) + '.') + r.extraMsg;
+    var msg = byId('message');
+    if (!msg.value.trim() || msg.value.indexOf('From the price builder:') === 0) msg.value = text;
+    clearErr('message');
+    if (form.hidden) { result.hidden = true; form.hidden = false; }
+    byId('contact').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+    setTimeout(function(){ var nmEl = byId('name'); try { nmEl.focus({ preventScroll: true }); } catch(_) { nmEl.focus(); } }, 500);
+  });
+  renderBuilder();
+
+  // ---- scroll-triggered reveals ----
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    var revealTargets = document.querySelectorAll('.hero > div, .sec-head, .toolbar, .grid .card, .ticket .stub, .pay-line, .b-controls, .b-output, .ship-notice, .ship, .extra, .policy, .contact-grid .form, .aside .info');
+    Array.prototype.forEach.call(revealTargets, function(el){
+      var sibs = Array.prototype.filter.call(el.parentNode.children, function(c){ return !c.hidden; });
+      var i = Math.max(0, sibs.indexOf(el));
+      el.classList.add('rv');
+      el.style.setProperty('--d', ((i % 3) * 90) + 'ms');
+    });
+    document.documentElement.classList.add('reveal-on');
+    var revealIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); revealIO.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    Array.prototype.forEach.call(revealTargets, function(el){ revealIO.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
